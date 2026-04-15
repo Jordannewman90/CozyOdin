@@ -1,5 +1,9 @@
 # AI_CHANGELOG.md
 
+## 2026-04-15
+- **Change**: Built complete World Bible documentation hub (`/docs`) with 17 structured design documents across 4 categories (Mechanics, World, Narrative, Architecture), plus master index README.
+- **Reasoning**: Establishing a comprehensive, agentic-friendly documentation scaffold that every future code generation task can reference for context. Each document includes implementation audits against actual codebase, active task checklists, and AI changelogs. Key bugs identified during audit: `timestamp`/`offline_start_time` mismatch in SaveManager, missing schema migration pattern, Ghost Trail running during all movement instead of only during dash.
+
 ## 2026-04-14
 - **Change**: Initialized Master PRD and core Godot `project/` architecture.
 - **Reasoning**: To establish a solid Feature/Entity-based directory layout for Godot 4.x before writing engine logic. Removed initial web boilerplate upon learning this is a standalone PC game. 
