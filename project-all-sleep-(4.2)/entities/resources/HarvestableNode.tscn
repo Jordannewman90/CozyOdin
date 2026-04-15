@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://c6v6v6v6v6v6v"]
+
+[ext_resource type="Script" path="res://entities/resources/HarvestableNode.gd" id="1_script"]
+[ext_resource type="Texture2D" uid="uid://c2v2v2v2v2v2v" path="res://icon.svg" id="2_texture"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_1"]
+radius = 20.0
+
+[node name="HarvestableNode" type="Area2D" groups=["harvestable"]]
+script = ExtResource("1_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.25, 0.25, 0.25, 1)
+scale = Vector2(0.3, 0.3)
+texture = ExtResource("2_texture")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_1")

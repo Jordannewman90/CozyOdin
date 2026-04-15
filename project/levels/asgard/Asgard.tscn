@@ -1,0 +1,49 @@
+[gd_scene load_steps=6 format=3 uid="uid://c3v3v3v3v3v3v"]
+
+[ext_resource type="PackedScene" uid="uid://c1v1v1v1v1v1v" path="res://entities/player/Odin.tscn" id="1_odin"]
+[ext_resource type="PackedScene" uid="uid://c4v4v4v4v4v4v" path="res://ui/HUD.tscn" id="2_hud"]
+[ext_resource type="PackedScene" uid="uid://c6v6v6v6v6v6v" path="res://entities/resources/HarvestableNode.tscn" id="3_node"]
+[ext_resource type="PackedScene" uid="uid://c7v7v7v7v7v7v" path="res://entities/proxy/Proxy.tscn" id="4_proxy"]
+[ext_resource type="PackedScene" uid="uid://c9v9v9v9v9v9v" path="res://systems/BifrostTransit.tscn" id="5_portal"]
+
+[node name="Asgard" type="Node2D"]
+
+[node name="Background" type="CanvasLayer" parent="."]
+layer = -1
+
+[node name="ColorRect" type="ColorRect" parent="Background"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.180392, 0.133333, 0.184314, 1)
+
+[node name="World" type="Node2D" parent="."]
+
+[node name="Odin" parent="World" instance=ExtResource("1_odin")]
+position = Vector2(320, 180)
+
+[node name="HarvestableNode" parent="World" instance=ExtResource("3_node")]
+position = Vector2(173, 114)
+
+[node name="HarvestableNode2" parent="World" instance=ExtResource("3_node")]
+position = Vector2(470, 243)
+
+[node name="TestProxy" parent="World" instance=ExtResource("4_proxy")]
+position = Vector2(181, 237)
+current_context = 1
+
+[node name="BifrostToNidavellir" parent="World" instance=ExtResource("5_portal")]
+position = Vector2(580, 50)
+target_scene = "res://levels/nidavellir/Nidavellir.tscn"
+portal_color = Color(0, 1, 1, 1)
+
+[node name="BifrostToAlfheim" parent="World" instance=ExtResource("5_portal")]
+position = Vector2(580, 310)
+target_scene = "res://levels/alfheim/Alfheim.tscn"
+portal_color = Color(0.1, 0.8, 0.1, 1)
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="HUD" parent="UI" instance=ExtResource("2_hud")]
