@@ -14,20 +14,19 @@
 
 ---
 
-## 2. Key Facilities
+## 2. Key Locations
+*   **The Hlidskjalf (Throne):** Odin's command seat.
+*   **The Royal Chambers (Private):** Where Odin and Frigg interact. Unlockable tiers.
+*   **The Queen's Balcony:** A Tier 3 expansion for domestic gardening.
+*   **The Bifrost Gate:** Guarded by Heimdall.
 
-| Facility | Function | Implementation Status |
-|:---------|:---------|:---------------------|
-| **Hlidskjalf (Throne)** | Deep Wind stamina recovery station | 🔴 Not started |
-| **Proxy Crafting Bench** | Create new Runic Proxies from resources | 🔴 Not started |
-| **The Asgard Vault** | Visual representation of stored resources | 🔴 Not started |
-| **Mediation Table** | Diplomatic dispute resolution | 🔴 Not started (empty dir) |
-| **Bifrost Terminal** | Fast travel to other realms | ✅ Portal exists |
-| **Raven Dashboard** | Hugin & Munin's offline event report | 🔴 Not started (empty dir) |
+## 3. Narrative Subtext
+*   **The Stirring Stick:** Somewhere in the scrap heaps of the forge lies a metal rod Brokk uses to stir slag. It is secretly Gungnir's inert shaft.
+*   **Loki's Tags:** Green pixel graffiti appearing on the matte-black walls, mocking the dwarves' precision.
 
 ---
 
-## 3. Layout Concept
+## 4. Layout Concept
 
 ```
 ┌──────────────────────────────────────────────────┐
@@ -46,7 +45,7 @@
 
 ---
 
-## 4. NPCs
+## 5. NPCs
 
 | NPC | Role | Location |
 |:----|:-----|:---------|
@@ -55,7 +54,7 @@
 
 ---
 
-## 5. Chaos State
+## 6. Chaos State
 
 Asgard **does not have a chaos state.** It is always stable — the safe harbor. However, if all other realms reach Critical chaos, Asgard's lighting dims and Heimdall delivers urgent warnings.
 
@@ -79,3 +78,4 @@ Asgard **does not have a chaos state.** It is always stable — the safe harbor.
 | Date | Change | Reasoning |
 |:-----|:-------|:----------|
 | 2026-04-15 | Created Asgard realm design doc. Identified that the scene exists but most hub facilities are unimplemented — only the Bifrost portals function. | Asgard needs to become a true "management desk" — the place where every strategic decision happens. Currently it's just a room with portals. |
+| 2026-04-16 | Added narrative subtext regarding world building. | Added: The Resonance Song (The world-trees hum in a specific frequency that can "re-vibe" divine artifacts), Loki's Overgrowth (Aggressive vines that seem to grow in the shape of a mocking grin). |

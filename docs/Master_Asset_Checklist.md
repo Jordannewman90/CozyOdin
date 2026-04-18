@@ -49,24 +49,42 @@
 
 | Asset | Type | Frames | Status | Notes |
 |:------|:-----|:-------|:-------|:------|
-| `heimdall_idle.png` | Sheet | 4 | 🔴 | Stoic guardian, near Bifrost |
-| `dagr_idle.png` | Sheet | 4 | 🔴 | Elven caretaker, gentle demeanor |
-| `brokk_idle.png` | Sheet | 4 | 🔴 | Stocky dwarf smith, hammer at side |
-| `eitri_idle.png` | Sheet | 4 | 🔴 | Lean dwarf smith, precision tools |
+| `odin_idle.png` | Sheet | 4 | 🟢 | Iridescent, 32x32 |
+| `odin_walk.png` | Sheet | 16 | 🔴 | 4 directions, cloaked |
+| `heimdall_idle.png` | Sheet | 4 | 🔴 | Stoic guard at Bifrost |
 | `frigg_idle.png` | Sheet | 4 | 🔴 | Wise goddess, reading/observing |
-| `hugin.png` | Static | 1 | 🔴 | Raven sprite (thought) |
-| `munin.png` | Static | 1 | 🔴 | Raven sprite (memory) |
+| `loki_idle.png` | Sheet | 4 | 🔴 | Lean, mischievous, green/gold |
+| `thor_idle.png` | Sheet | 4 | 🔴 | Burly, hammer-less in Phase 1 |
+| `ratatoskr.png` | Sheet | 4 | 🔴 | Jittery squirrel messenger |
+| `mimir.png` | Sheet | 4 | 🔴 | Severed head bobbing in a jar |
+| `norns.png` | Sheet | 4 | 🔴 | Three spooky sisters (one sprite) |
+| `dagr_idle.png` | Sheet | 4 | 🔴 | Elven caretaker |
+| `brokk_idle.png` | Sheet | 4 | 🔴 | Stocky dwarf smith |
+| `eitri_idle.png` | Sheet | 4 | 🔴 | Precision dwarf smith |
 
-### NPC Portraits (High-Res)
-**Directory:** `assets/sprites/portraits/`
+---
 
-| Asset | Type | Size | Status | Notes |
-|:------|:-----|:-----|:-------|:------|
-| `portrait_heimdall.png` | Static | 64×64+ | 🔴 | Dialogue box portrait, neutral expression |
-| `portrait_dagr.png` | Static | 64×64+ | 🔴 | Warm, welcoming expression |
-| `portrait_dagr_upset.png` | Static | 64×64+ | 🔴 | Offended / Mediation state |
-| `portrait_brokk.png` | Static | 64×64+ | 🔴 | Pragmatic, focused |
-| `portrait_eitri.png` | Static | 64×64+ | 🔴 | Precise, analytical |
+## 3. Environments & Architecture (Tilesets)
+
+| Asset Name | Type | Status | Notes |
+|:-----------|:-----|:-------|:------|
+| `asgard_hub.png` | Tileset | 🟡 | Golden, high-end, clean |
+| `royal_chambers.png` | Tileset | 🔴 | Palace expansion (Tier 2-4) |
+| `queen_balcony.png` | Tileset | 🔴 | Garden balcony tiles (Tier 3) |
+| `nidavellir_forge.png`| Tileset | 🟡 | Dark iron, industrial, matte |
+| `alfheim_woods.png` | Tileset | 🟡 | Bioluminescent, organic, soft |
+
+---
+
+## 4. UI & Narrative Icons
+
+| Asset Name | Type | Status | Notes |
+|:-----------|:-----|:-------|:------|
+| `bezel_ui.png` | Static | 🟢 | Chronograph-style rings |
+| `raven_report_bg.png`| Static | 🔴 | Paper/parchment dashboard |
+| `harmony_sigh.png` | Sprite | 🔴 | Icon for Frigg's domestic cues |
+| `intuition_bubble.png`| Sprite | 🔴 | Odin's thought bubble frame |
+| `loki_tag.png` | Decal | 🔴 | Green pixel-art graffiti |
 
 ---
 

@@ -31,56 +31,42 @@ Project All-Sleep is an offline-first, cozy management game where the player act
 
 Odin’s divine power isn’t a cheat code; it is a high-end, colorful "polish" applied to a chaotic world, governed by Stamina (Tension).
 
-### A. The Iridescent Aesthetic
-When Odin channels magic, the 16-bit palette shifts from grounded, earthy tones to high-contrast cyan, magenta, violet, and brilliant gold.
-* **The Presence Aura:** Odin's passive proximity causes the environment to bloom—mana-flowers glow brighter and dwarven machinery hums flawlessly when he walks by.
+### A. The Iridescent Aesthetic & The Fade
+When Odin channels magic, the 16-bit palette shifts to high-contrast cyan, magenta, violet, and gold.
+*   **The Stamina Fade:** As Odin’s stamina drops, his magical armor (and the rainbow VFX) fades to a heavy, stone-gray. Only his "human" features (beard, helmet) remain vibrant.
+*   **The Presence Aura:** Odin's passive proximity causes the environment to bloom—mana-flowers glow brighter and dwarven machinery hums flawlessly when he walks by.
 
-### B. Divine Abilities
-* **The Bifrost Step:** A short-range mobility dash leaving behind a 4-frame "smear" of rainbow silhouettes and holographic pixel sparks.
-* **Prismatic Transmutation:** A charged harvesting strike. The node shatters into a geyser of colorful light, instantly purifying raw materials into refined ingots.
-* **The Gungnir Resonance:** A massive shockwave of liquid-rainbow light that instantly "re-codes" chaotic tiles (Ice/Weeds) back into their pristine, healthy state.
-
-### C. Kinetic Resonance (The Stamina Loop)
-Instead of consuming food items, Odin manages energy through a momentum-based "Flow State."
-* **Spark Absorption:** Shattering chaos tiles releases holographic "Divine Sparks." Walking through these freshly blooming areas winds Odin’s Stamina bar back up.
-* **Peaceful Trickle:** Walking through a perfectly healthy (0% Chaos) realm provides a slow, passive stamina regeneration.
-* **The Deep Wind (Hard Reset):** When completely tapped out, Odin sits on the Hlidskjalf throne. The player holds a button to manually "wind" his energy back up, accompanied by a heavy, mechanical ratcheting sound.
+### B. The Two-Voice System
+*   **Public (The All-Father):** Stoic, silent, and commanding. He interacts with realm NPCs through nods and gestures.
+*   **Private (The Husband):** Only speaks openly to **Frigg.** In private, he is dry, cynical, and vents about the frustrations of managing the realms.
+*   **Divine Intuition:** Player-only internal monologue (Thought Bubbles) triggered by "Husband Favors" and environmental clues.
 
 ---
 
-## 4. Economy & Logistical Supply Chain
+## 4. Divine Harmony & Home Life
 
-A strategic inventory management system where harvested resources must be meticulously allocated before logging off:
-* **Realm Upkeep (The Burn Rate):** Resources required to remain in the realm's local storage to prevent immediate offline chaos (e.g., Elves need Sun-Silk left behind to fend off weeds).
-* **Trade Routes (Dependencies):** Resources automatically exported to maintain cross-border relations (e.g., Elves exporting Mana-Sap to cool the Dwarven forges).
-* **The Asgard Vault (Emergency Fund):** The personal surplus brought back to the hub, used for tool upgrades, crafting Proxies, and paying diplomatic fines.
+A deep relationship system with Frigg that rewards "Average Husband Tasks" (Divine version).
 
----
-
-## 5. Automation: Proxies & The Alignment Bezel
-
-Manual grinding is eventually replaced by Runic Proxies—programmable, 16-bit golem agents.
-
-### The Alignment Bezel (Configuration Mini-Game)
-A timing-based, tactile UI resembling a high-end mechanical chronograph used to program Proxies.
-* **The 3-Dial System:** Dials spin at varying speeds.
-    * **Outer Dial (Directive):** What the proxy does (e.g., Harvest, Mend). Slowest rotation.
-    * **Inner Dial (Context):** The environment (e.g., Dwarven Forge, Elven Woods). Medium rotation.
-    * **Center Bezel (Guardrail):** Strict constraints (e.g., Max Yield, Do Not Disturb). Fastest rotation.
-* **The Alignment Spectrum:** Instead of binary success, the game measures the angular offset of each lock.
-    * **Divine Sync:** Perfect timing yields 100% efficiency and rare drop potential.
-    * **Clumsy State:** Poor timing results in reduced productivity (down to 10%) but **never** increases realm chaos.
-* **Push-Your-Luck (Re-Tuning):** Players can spend Stamina to re-spin a slipped ring at the Asgard Proxy Bench to optimize their "Perfect System."
+*   **The Harmony Gauge:** A hidden metric of the relationship. High Harmony grants stamina recovery buffs and "Divine Ambrosia" gifts from Frigg.
+*   **Discovery Layer:** Tasks are discovered through observation (sighs, broken vases, overhearing conversations), not a quest log.
 
 ---
 
-## 6. Diplomacy & The Mediation Table
+## 5. Automation: Proxies & The Asgardian Temple
 
-Realms rely on your automated exports. When a Proxy acts out of context (e.g., a Dwarf proxy strip-mining an Elven forest), dependencies break.
+### The Asgardian Temple Expansion (Creative Expression)
+The hub expands as Odin stabilizes the realms and improves his Harmony with Frigg.
+*   **Tier 1: The Command Center (Start):** Functional throne room and Bifrost terminal.
+*   **Tier 2: The Hearth & Workshop:** Unlock after Nidavellir. Adds the Proxy Smithing Wing.
+*   **Tier 3: The Queen’s Balcony:** Unlock after Alfheim. Adds a customizable garden for Frigg.
+*   **Tier 4: The Gallery of the All-Father:** Endgame trophy room for Gungnir and realm achievements.
 
-* **The Grand Trade Moot:** A scheduled, seasonal event where accumulated cross-realm friction boils over into active Rifts.
-* **The Mediation Table:** Odin invites aggrieved Regents to Asgard. Using a physical scale UI, the player pays resources out of the Asgard Vault to buy down their anger.
-* **The Treaty-Rune:** Successfully balancing the scale yields a Treaty-Rune. Slotted into a Proxy's Bezel, it acts as an ultimate Guardrail, granting 100% immunity to cultural offenses in a specific realm for 3 real-world days.
+---
+
+## 6. The Search for the Shattered Spear (Narrative Arc)
+
+*   **Act I Goal:** Gungnir is missing/shattered. Odin must "pull weeds by hand" and investigate Loki's tracks in Nidavellir and Alfheim to re-forge the staff.
+*   **The Payoff:** Restoring Gungnir restores Odin's full rainbow palette and unlocks his magical move-set (Dash, Transmutation).
 
 ---
 
@@ -91,14 +77,15 @@ Realms rely on your automated exports. When a Proxy acts out of context (e.g., a
 ### Phase 1 Scope (The MVP Realms)
 1. **Asgard (The Central Hub)**
    * **The Vibe:** Majestic, golden, high-end logistical command center.
-   * **Included Elements:** The Hlidskjalf (Throne), Proxy Crafting Bench, The Asgard Vault, Mediation Table, and the Bifrost Terminal.
+   * **Included Elements:** The Hlidskjalf (Throne), Proxy Crafting Bench, The Asgard Vault, Mediation Table, The Royal Chambers, and The Queen's Balcony.
 2. **Nidavellir (Realm of the Dwarves)**
    * **The Vibe:** High-performance industrial forge. Precision engineering, anodized metal, matte black finishes, direct-drive rotary motors, and heavy torque.
-   * **Included Elements:** Brokk & Eitri’s Shop, Star-Iron Nodes, active Thermal Vents.
+   * **Narrative:** Home to the "Inert Shaft" of Gungnir (used as a stirring stick). Loki's "tags" appear in the mines.
    * **Chaos State:** The Deep Freeze. Pale blue ice encases machinery; requires shattering to restart vents.
 3. **Alfheim (Realm of the Light Elves)**
    * **The Vibe:** Ethereal, tranquil, bioluminescent manicured gardens.
    * **Included Elements:** Dagr’s Nursery, Mana-Sap Trees, Sun-Silk Flowers.
+   * **Narrative:** Where the spear is "Re-vibed" with Mana-Sap. Loki's "prank vines" grow here.
    * **Chaos State:** The Overgrowth. Aggressive, thorny vines choke out nodes and require pruning.
 4. **The Tease (Future Content Breadcrumbs)**
    * Unplayable realms appear on the Bifrost UI with visual error states (e.g., Jotunheim covered in unbreakable ice).

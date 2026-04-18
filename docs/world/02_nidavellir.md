@@ -34,6 +34,12 @@
 
 ---
 
+## 3. Narrative Subtext
+*   **The Stirring Stick:** Somewhere in the scrap heaps of the forge lies a metal rod Brokk uses to stir slag. It is secretly Gungnir's inert shaft.
+*   **Loki's Tags:** Green pixel graffiti appearing on the matte-black walls, mocking the dwarves' precision.
+
+---
+
 ## 4. Chaos State: The Deep Freeze ❄️
 
 | Tier | Visual | Mechanic |

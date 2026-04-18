@@ -35,6 +35,10 @@
 
 ---
 
+## 3. Narrative Subtext
+*   **The Resonance Song:** The world-trees hum in a specific frequency that can "re-vibe" divine artifacts.
+*   **Loki's Overgrowth:** Aggressive vines that seem to grow in the shape of a mocking grin.
+
 ## 4. Chaos State: The Overgrowth 🌿
 
 | Tier | Visual | Mechanic |
