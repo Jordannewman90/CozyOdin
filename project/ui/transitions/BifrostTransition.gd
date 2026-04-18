@@ -33,8 +33,9 @@ func start_transition():
 
 func _apply_shake():
 	var shake_tween = create_tween()
-	for i in range(15):
-		var shake_offset = Vector2(randf_range(-20, 20), randf_range(-20, 20))
+	# Shake for 2.0 seconds (40 iterations * 0.05s)
+	for i in range(40):
+		var shake_offset = Vector2(randf_range(-15, 15), randf_range(-15, 15))
 		shake_tween.tween_property(color_rect, "position", shake_offset, 0.05)
 	shake_tween.tween_property(color_rect, "position", Vector2.ZERO, 0.05)
 
