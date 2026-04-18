@@ -1,6 +1,11 @@
 # AI_CHANGELOG.md
 
 ## 2026-04-18
+- **Feature**: Implemented "Full Runic Bloom" transition (4.5s asymmetric rhythm).
+- **Feature**: Upgraded Raven Dashboard to "Divine Tablet" UI with Hugin/Munin portraits.
+- **Architecture**: Created `docs/architecture/05_asset_manifest.md` to track placeholder vs final art.
+- **Reasoning**: Used AI-generated placeholders to finalize UI logic and layout; established a formal manifest to ensure all placeholders are eventually replaced by the User.
+- **Resolution**: Upgraded project resolution to 2560x1440 (2K) for high-fidelity presentation.
 - **Testing**: Achieved 100% Logic Coverage across all Phase 1 scripts. Generated formal Unit Test Report.
 - **Mechanics**: Implemented Dynamic Population Scaler (Chaos-based density) and Organic Chaos Escalation simulation in `SaveManager.gd`.
 - **UI/UX**: Implemented Raven Dashboard "Morning Report" with Hugin/Munin dialogue and offline resource simulator.
