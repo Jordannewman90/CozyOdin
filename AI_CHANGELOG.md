@@ -1,26 +1,16 @@
-# AI_CHANGELOG.md
+# AI Changelog
 
-## 2026-04-18
-- **Feature**: Implemented "Full Runic Bloom" transition (4.5s asymmetric rhythm).
-- **Feature**: Upgraded Raven Dashboard to "Divine Tablet" UI with Hugin/Munin portraits.
-- **Architecture**: Created `docs/architecture/05_asset_manifest.md` to track placeholder vs final art.
-- **Reasoning**: Used AI-generated placeholders to finalize UI logic and layout; established a formal manifest to ensure all placeholders are eventually replaced by the User.
-- **Resolution**: Upgraded project resolution to 2560x1440 (2K) for high-fidelity presentation.
-- **Testing**: Achieved 100% Logic Coverage across all Phase 1 scripts. Generated formal Unit Test Report.
-- **Mechanics**: Implemented Dynamic Population Scaler (Chaos-based density) and Organic Chaos Escalation simulation in `SaveManager.gd`.
-- **UI/UX**: Implemented Raven Dashboard "Morning Report" with Hugin/Munin dialogue and offline resource simulator.
-- **Narrative**: Codified Divine Harmony (Frigg relationship), 4-Tier Palace Expansion roadmap, and full 11-character NPC roster.
-- **Documentation**: Synchronized all PRD, Asset, and World documents with new Phase 1 milestones.
-- **Design Hub**: Initialized `docs/IDEAS.md` to capture creative brainstorming (Re-Tuning, Cozy Chaos, etc.).
+## [2026-04-18] - Divine Synchrony & Runic Audit
 
-## 2026-04-15
-- **Godot MCP Server**: Installed Node.js MCP server in `tools/godot-mcp` and configured `~/.gemini/antigravity/mcp_config.json` with absolute paths. This allows the AI agent to directly interface with the Godot engine.
-- **Asset Pipeline**: Downscaled Odin's iridescent concept art to a 64x64 pixel sprite reference (`assets/reference/odin_sprite_64x64.png`).
-- **Getting Started Guide**: Created `/docs/Getting_Started_Guide.md` providing an 8-week sprint plan and pixel art workflow.
-- **Master Design Reviews**: Initialized design audit hub and completed Review #1 (Foundation Audit - Score: 6.0/10).
-- **Documentation Hub**: Created 17 documents in `/docs` covering project mechanics, world-building, and architecture.
+### Added
+- **Transition Persistence**: Updated `TitleScreen.gd` to add `BifrostTransition` to the `root` node. This ensures the transition survives the `change_scene_to_file` call and plays its full "Pulse Out" animation after the new scene is loaded.
+- **Input Debouncing**: Implemented an `is_starting` boolean flag in `TitleScreen.gd`. This prevents multiple transition instances from being triggered by rapid inputs (the "Eternal Bloom" glitch).
+- **Auto-Cleanup**: Added `queue_free()` to `BifrostTransition.gd` on the `animation_finished` signal to ensure persistent transition nodes are removed from the root after completion.
 
-## 2026-04-14
-- **Project Structure**: Initialized core Godot project architecture in `/project`.
-- **Core Systems**: Implemented base singletons for `SaveManager` and `TimeEngine`.
-- **Aesthetics**: Added iridescent shader effects and movement logic for the Odin character.
+### Fixed
+- **Bifrost Glitch**: Resolved the issue where the transition was being cut off mid-bloom because its parent scene was freed.
+- **UI Framing**: Corrected the `RavenDashboard` layout to prevent text/portrait overlap with the golden runic frame.
+- **Signal Handshake**: Finalized the `dashboard_closed` signal handshake between the Tablet UI and the Title Screen to ensure a perfect "Divine Arrival" in Asgard.
+
+### Reasoning
+The "Eternal Bloom" was caused by multiple instantiations of the transition node due to lack of input debouncing. By moving the node to the root and locking the input, we ensure a single, stable transition that cleans itself up once its visual job is done.

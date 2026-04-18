@@ -62,7 +62,15 @@ func _apply_report_ui():
 		
 	munin_label.text = "MUNIN: \"I remember your return, All-Father. %s %s\"" % [chaos_comment, rumor]
 
+signal dashboard_closed
+
 func _on_continue_button_pressed():
+	# Emit signal so TitleScreen/Systems know we are done
+	dashboard_closed.emit()
+	
 	# Hide dashboard and resume game
 	self.hide()
 	get_tree().paused = false
+	
+	# Clean up to prevent ghost UI nodes
+	queue_free()

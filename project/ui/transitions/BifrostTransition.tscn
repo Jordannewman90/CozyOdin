@@ -60,6 +60,7 @@ _data = {
 
 [node name="BifrostTransition" type="CanvasLayer"]
 layer = 128
+process_mode = 3
 script = ExtResource("1_script")
 
 [node name="ColorRect" type="ColorRect" parent="."]
@@ -69,6 +70,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="BloomRect" type="ColorRect" parent="."]
 material = SubResource("ShaderMaterial_bloom")
@@ -77,6 +79,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+mouse_filter = 2
 
 [node name="CPUParticles2D" type="CPUParticles2D" parent="."]
 position = Vector2(1280, 720)

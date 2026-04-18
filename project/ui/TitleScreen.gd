@@ -15,6 +15,7 @@ func _ready():
 	get_tree().paused = false
 
 const BIFROST_TRANSITION = preload("res://ui/transitions/BifrostTransition.tscn")
+var is_starting = false
 
 func _on_continue_pressed():
 	_start_game()
@@ -25,11 +26,16 @@ func _input(event):
 		_start_game()
 
 func _start_game():
+	if is_starting:
+		return
+	is_starting = true
+	
 	print("Bifrost engaged. Entering Asgard...")
 	
 	# Instantiate and play the randomized transition
 	var transition = BIFROST_TRANSITION.instantiate()
-	add_child(transition)
+	# Add to root so it persists across the scene change
+	get_tree().root.add_child(transition)
 	transition.start_transition()
 	
 	# Wait for the "White Out" peak (now at 2.5s for the 4.5s surge)
@@ -39,9 +45,13 @@ func _start_game():
 	var showed_dashboard = SaveManager.handle_offline_time()
 	
 	if showed_dashboard:
-		# Wait for the dashboard to be closed before proceeding
-		# We'll listen for the "Continue" signal or just check the dashboard instance
-		# For now, we'll proceed to the scene but keep it paused
+		# Find the dashboard in the root (it was added via call_deferred in SaveManager)
+		# We'll wait a frame to ensure it's there, then wait for its signal
+		await get_tree().process_frame
+		var dashboard = get_tree().root.get_node_or_null("RavenDashboard")
+		if dashboard:
+			await dashboard.dashboard_closed
+		
 		get_tree().change_scene_to_file("res://levels/asgard/Asgard.tscn")
 	else:
 		get_tree().change_scene_to_file("res://levels/asgard/Asgard.tscn")

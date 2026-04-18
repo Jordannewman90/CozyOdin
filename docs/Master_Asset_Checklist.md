@@ -201,10 +201,10 @@
 
 | Asset | Type | Status | Notes |
 |:------|:-----|:-------|:------|
-| `dashboard_bg.png` | Static | 🔴 | Parchment/scroll background |
-| `dashboard_raven_hugin.png` | Static | 🔴 | Small raven icon for Hugin lines |
-| `dashboard_raven_munin.png` | Static | 🔴 | Small raven icon for Munin lines |
-| `dashboard_realm_indicator.png` | Static | 🔴 | Per-realm status pip (color-coded) |
+| `dashboard_bg.png` | Static | ✅ | Parchment/scroll background |
+| `dashboard_raven_hugin.png` | Static | ✅ | Small raven icon for Hugin lines |
+| `dashboard_raven_munin.png` | Static | ✅ | Small raven icon for Munin lines |
+| `dashboard_realm_indicator.png` | Static | ✅ | Per-realm status pip (color-coded) |
 
 ### Mediation Table
 **Directory:** `assets/sprites/ui/mediation/`
@@ -270,12 +270,12 @@
 | Bifrost & Transitions | 5 | 0 | 5 |
 | UI — HUD | 9 | 0 | 9 |
 | UI — Alignment Bezel | 11 | 0 | 11 |
-| UI — Raven Dashboard | 4 | 0 | 4 |
+| UI — Raven Dashboard | 4 | 4 | 0 |
 | UI — Mediation Table | 6 | 0 | 6 |
 | UI — Dialogue Box | 3 | 0 | 3 |
-| VFX & Particles | 7 | 0 | 7 |
+| VFX & Particles | 7 | 1 | 6 |
 | Miscellaneous | 3 | 0 | 3 |
-| **TOTAL** | **101** | **0** | **101** |
+| **TOTAL** | **101** | **5** | **96** |
 
 ---
 
