@@ -8,6 +8,12 @@ uniform float stamina_pct : hint_range(0.0, 1.0) = 1.0; // Fades to gray as this
 void fragment() {
 	vec4 tex_color = texture(TEXTURE, UV);
 	
+	// CHROMA KEY: Discard Magenta background (RGB 1.0, 0.0, 1.0)
+	// Using distance check to catch compression artifacts/variations
+	if (distance(tex_color.rgb, vec3(1.0, 0.0, 1.0)) < 0.5) {
+		discard;
+	}
+	
 	// MASK LOGIC: 
 	// For placeholders, we treat anything 'blue-ish' as magical armor.
 	// For final art, we'll use a specific color key.

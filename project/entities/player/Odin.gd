@@ -9,6 +9,7 @@ var trail_frequency: float = 0.05
 
 @onready var sprite = $Sprite2D
 @onready var interaction_area = $InteractionArea
+@onready var anim_player = $AnimationPlayer
 
 func _ready():
 	add_to_group("player")
@@ -67,6 +68,9 @@ func _physics_process(delta):
 		if direction.x != 0:
 			sprite.flip_h = direction.x < 0
 		
+		# Play walk animation
+		anim_player.play("walk_down")
+		
 		# Handle Ghost Trail
 		trail_timer += delta
 		if trail_timer >= trail_frequency:
@@ -74,6 +78,8 @@ func _physics_process(delta):
 			trail_timer = 0
 	else:
 		velocity = velocity.move_toward(Vector2.ZERO, move_speed)
+		anim_player.stop()
+		sprite.frame = 0 # Return to idle frame
 		trail_timer = 0
 
 	move_and_slide()
@@ -86,6 +92,9 @@ func _physics_process(delta):
 func spawn_ghost_trail():
 	var ghost = Sprite2D.new()
 	ghost.texture = sprite.texture
+	ghost.hframes = sprite.hframes
+	ghost.vframes = sprite.vframes
+	ghost.frame = sprite.frame
 	ghost.global_position = global_position
 	ghost.flip_h = sprite.flip_h
 	ghost.scale = sprite.scale

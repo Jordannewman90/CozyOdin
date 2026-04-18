@@ -1,7 +1,29 @@
 [gd_scene load_steps=5 format=3 uid="uid://c1v1v1v1v1v1v"]
 
 [ext_resource type="Script" path="res://entities/player/Odin.gd" id="1_script"]
-[ext_resource type="Texture2D" path="res://assets/sprites/player/odin_idle.png" id="2_texture"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/odin_walk_south.png" id="2_texture"]
+
+[sub_resource type="Animation" id="Animation_walk_down"]
+resource_name = "walk_down"
+length = 0.8
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [0, 1, 2, 3]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_main"]
+_data = {
+"walk_down": SubResource("Animation_walk_down")
+}
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
 size = Vector2(16, 16)
@@ -14,6 +36,13 @@ script = ExtResource("1_script")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture = ExtResource("2_texture")
+hframes = 2
+vframes = 2
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_main")
+}
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_1")
