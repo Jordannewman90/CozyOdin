@@ -14,8 +14,8 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 
 [application]
 
-config/name="Project All-Sleep"
-run/main_scene="res://levels/asgard/Asgard.tscn"
+config/name="The All-Sleep"
+run/main_scene="res://ui/TitleScreen.tscn"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
