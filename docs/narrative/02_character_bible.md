@@ -16,6 +16,7 @@
   - **Public (The All-Father):** Never speaks directly to NPCs or the public. Communicates through stoic nods, glares, and presence.
   - **Private (The Husband):** Only speaks openly to Frigg. In her company, he is talkative, cynical, and vents his frustrations about the realms.
   - **Internal (Odin's Intuition):** The player sees his internal monologue as "Thought Bubbles" when inspecting objects or environmental clues.
+- **Tone & Respect Directive:** Odin's "grumpy" humor is always directed at **himself**, his own exhaustion, or the absurdity of divine chores. Humor must never be demeaning toward Frigg or use tired tropes. Frigg is the competent partner; Odin is the relatable, tired laborer trying to keep up.
 
 ### Visual Design
 - **Size:** 32x32 pixel sprite
