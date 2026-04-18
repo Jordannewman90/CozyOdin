@@ -1,8 +1,8 @@
 # Chaos Escalation System
 
 **Category:** Mechanics — Background Simulation
-**Status:** 🔴 Not Implemented (data schema exists)
-**Related Code:** `project/systems/SaveManager.gd` (stores `realm_states.chaos`)
+**Status:** ✅ **Implemented** (Simulated in `SaveManager.gd`)
+**Related Code:** `project/systems/SaveManager.gd` (Handles hourly decay and randomization)
 
 ---
 

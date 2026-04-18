@@ -9,8 +9,25 @@ func run_tests():
 	test_initial_state(sm)
 	test_proxy_registration(sm)
 	test_offline_calculation(sm)
+	test_chaos_simulation(sm)
 	
 	print("--- All SaveManager Tests Passed! ---")
+
+func test_chaos_simulation(sm):
+	# Set Nidavellir to 10% chaos
+	sm.game_data["realm_states"]["nidavellir"]["chaos"] = 10.0
+	
+	# Mock 24 hours of sleep (86400 seconds)
+	var one_day_ago = Time.get_unix_time_from_system() - 86400
+	sm.game_data["timestamp"] = one_day_ago
+	
+	# Run the handler
+	sm._handle_offline_time()
+	
+	var final_chaos = sm.game_data["realm_states"]["nidavellir"]["chaos"]
+	assert(final_chaos > 10.0, "FAIL: Chaos did not increase after 24 hours")
+	assert(final_chaos <= 100.0, "FAIL: Chaos exceeded 100% cap")
+	print("PASS: Chaos Simulation Loop Verified")
 
 func test_initial_state(sm):
 	assert(sm.game_data.has("resources"), "FAIL: Missing resources key")

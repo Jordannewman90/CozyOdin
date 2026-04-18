@@ -47,16 +47,38 @@ func _handle_offline_time():
 	var proxies = game_data.get("proxies", [])
 	var total_earned = int((offline_seconds / 3600.0) * proxies.size())
 	
-	# Add to vault
+	# 2. Simulate Chaos Escalation (Organic Decay)
+	var hours_slept = offline_seconds / 3600.0
+	var total_chaos_delta = 0.0
+	
+	for realm in game_data["realm_states"]:
+		if realm == "asgard": continue # Asgard is eternal
+		
+		var realm_chaos = game_data["realm_states"][realm].get("chaos", 0.0)
+		var hourly_decay = 0.5 # Base % per hour
+		
+		# Apply randomization per hour
+		var realm_delta = 0.0
+		for h in range(int(hours_slept)):
+			var surge = 0.0
+			if randf() < 0.15: # 15% chance of a Chaos Surge per hour
+				surge = randf_range(1.0, 3.0)
+			realm_delta += hourly_decay + surge
+			
+		# Update and clamp
+		game_data["realm_states"][realm]["chaos"] = clamp(realm_chaos + realm_delta, 0.0, 100.0)
+		total_chaos_delta += realm_delta
+	
+	# Add resources to vault
 	var current_vault = game_data["inventory"]["vault"].get("Star-Iron", 0)
 	game_data["inventory"]["vault"]["Star-Iron"] = current_vault + total_earned
 	
-	# 2. Show Dashboard
+	# 3. Show Dashboard
 	var dash_scene = load("res://ui/raven_dashboard/RavenDashboard.tscn")
 	if dash_scene:
 		var dash = dash_scene.instantiate()
 		get_tree().root.add_child.call_deferred(dash)
-		dash.setup_report(offline_seconds, total_earned, 0.0)
+		dash.setup_report(offline_seconds, total_earned, total_chaos_delta)
 		
 		# Pause game while dashboard is open
 		get_tree().paused = true
