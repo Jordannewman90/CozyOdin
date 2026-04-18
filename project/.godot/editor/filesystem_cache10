@@ -1,5 +1,5 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1776517631
+::res://::1776517892
 icon.svg::CompressedTexture2D::5584288954425062935::1776298289::1776298328::1::::<><><>0<>0<>be0979f2eeefc7176cb2dcee26f1ebe3<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 ::res://assets/::1776517537
 ::res://assets/shaders/::1776517595
@@ -11,8 +11,10 @@ odin_idle.png::CompressedTexture2D::8293975309753875171::1776298284::1776298328:
 ::res://assets/sprites/world/::1776298200
 ::res://assets/sprites/world/asgard/::1776345692
 asgard_floor_tile.png::CompressedTexture2D::1849376574247616350::1776345039::1776345692::1::::<><><>0<>0<>c3dd94f439dc76cd2e660087f25d3794<>res://.godot/imported/asgard_floor_tile.png-22629475ae625f35cd3c46a455f593e4.ctex::
-::res://assets/ui/::1776517626
+::res://assets/ui/::1776517887
 bifrost_mask.png::CompressedTexture2D::6842154597405335923::1776517626::1776517632::1::::<><><>0<>0<>b16924e8644007d0177b3a8e8ec71597<>res://.godot/imported/bifrost_mask.png-0b4774b671d23975e4ccdf54b7e2476e.ctex::
+raven_dashboard_tablet.png::CompressedTexture2D::5005846422615314625::1776517834::1776517841::1::::<><><>0<>0<>5c2a5dc837a4d194babbe54f23f4f318<>res://.godot/imported/raven_dashboard_tablet.png-5f320dec65e73d9ecb2e44c7ef5ded59.ctex::
+raven_portraits.png::CompressedTexture2D::6829167374652437309::1776517887::1776517877::0::::<><><>0<>0<>cb2a6694ff758b397ed4dbf2bab53968<>::
 title_screen.png::CompressedTexture2D::1389897789123534163::1776515754::1776515760::1::::<><><>0<>0<>ac23ba6bfe84756a7a6f5784f4aaa5e5<>res://.godot/imported/title_screen.png-96ed740b51273507e08636dd3ed7d1a7.ctex::
 ::res://assets/ui/dev_logs/::1776517506
 media__1776515430315.png::CompressedTexture2D::5889305302634264346::1776516082::1776517506::1::::<><><>0<>0<>ad2b38848ad152f0a806cfbd832ec784<>res://.godot/imported/media__1776515430315.png-a9535cf3ac8dea723308e7a313bc503e.ctex::
@@ -51,7 +53,7 @@ TimeEngine.gd::GDScript::5670827373099121384::1776127823::0::1::::<>Node<><>0<>0
 ::res://ui/::1776516890
 HUD.gd::GDScript::352580265283705431::1776483558::0::1::::<>Control<><>0<>0<><>::
 HUD.tscn::PackedScene::6853469617151529179::1776129027::0::1::::<><><>0<>0<><>::res://ui/HUD.gd
-TitleScreen.gd::GDScript::740527366234453962::1776517235::0::1::::<>Control<><>0<>0<><>::
+TitleScreen.gd::GDScript::740527366234453962::1776517738::0::1::::<>Control<><>0<>0<><>::
 TitleScreen.tscn::PackedScene::-1::1776515804::0::1::::<><><>0<>0<><>::res://ui/TitleScreen.gd<>res://assets/ui/title_screen.png
 ::res://ui/alignment_bezel/::1776129584
 AlignmentBezel.gd::GDScript::7414774518172685404::1776483462::0::1::::<>Control<><>0<>0<><>::
@@ -62,5 +64,5 @@ AlignmentBezel.tscn::PackedScene::7134468069950024195::1776128702::0::1::::<><><
 RavenDashboard.gd::GDScript::8359108773304063973::1776517033::0::1::::RavenDashboard<>CanvasLayer<><>0<>0<><>::
 RavenDashboard.tscn::PackedScene::-1::1776487526::0::1::::<><><>0<>0<><>::res://ui/raven_dashboard/RavenDashboard.gd
 ::res://ui/transitions/::1776517506
-BifrostTransition.gd::GDScript::5429541467074320432::1776517301::0::1::::<>CanvasLayer<><>0<>0<><>::
-BifrostTransition.tscn::PackedScene::-1::1776517589::0::1::::<><><>0<>0<><>::res://ui/transitions/BifrostTransition.gd<>res://assets/shaders/runic_bloom.gdshader<>res://assets/ui/runic_bloom_mask.png
+BifrostTransition.gd::GDScript::5429541467074320432::1776517746::0::1::::<>CanvasLayer<><>0<>0<><>::
+BifrostTransition.tscn::PackedScene::-1::1776517731::0::1::::<><><>0<>0<><>::res://ui/transitions/BifrostTransition.gd<>res://assets/shaders/runic_bloom.gdshader<>res://assets/ui/bifrost_mask.png

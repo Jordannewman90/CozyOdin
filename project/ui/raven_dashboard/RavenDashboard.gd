@@ -2,9 +2,9 @@ extends CanvasLayer
 
 class_name RavenDashboard
 
-@onready var hugin_label = $HuginText
-@onready var munin_label = $MuninText
-@onready var time_label = $TimeSleptLabel
+@onready var hugin_label = $TabletFrame/HuginText
+@onready var munin_label = $TabletFrame/MuninText
+@onready var time_label = $TabletFrame/TimeSleptLabel
 
 var hugin_facts = [
 	"The supply lines held firm.",

@@ -1,56 +1,101 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://ui/raven_dashboard/RavenDashboard.gd" id="1_script"]
+[ext_resource type="Texture2D" path="res://assets/ui/raven_dashboard_tablet.png" id="2_tablet"]
+[ext_resource type="Texture2D" path="res://assets/ui/raven_portraits.png" id="3_ravens"]
 
 [node name="RavenDashboard" type="CanvasLayer"]
+process_mode = 3
 script = ExtResource("1_script")
 
-[node name="Background" type="ColorRect" parent="."]
+[node name="Dimmer" type="ColorRect" parent="."]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0, 0, 0, 0.705882)
+color = Color(0, 0, 0, 0.784314)
 
-[node name="TimeSleptLabel" type="Label" parent="."]
-anchors_preset = -1
-anchor_left = 0.1
-anchor_top = 0.1
-anchor_right = 0.9
-anchor_bottom = 0.2
+[node name="TabletFrame" type="TextureRect" parent="."]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -600.0
+offset_top = -600.0
+offset_right = 600.0
+offset_bottom = 600.0
 grow_horizontal = 2
-text = "You slept for..."
-horizontal_alignment = 1
+grow_vertical = 2
+texture = ExtResource("2_tablet")
+expand_mode = 1
+stretch_mode = 5
 
-[node name="HuginText" type="Label" parent="."]
+[node name="HuginPortrait" type="TextureRect" parent="TabletFrame"]
+layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.1
-anchor_top = 0.3
-anchor_right = 0.9
+anchor_left = 0.05
+anchor_top = 0.25
+anchor_right = 0.25
 anchor_bottom = 0.45
-grow_horizontal = 2
-text = "Hugin: Counting..."
+texture = ExtResource("3_ravens")
+expand_mode = 1
+stretch_mode = 5
+region_enabled = true
+region_rect = Rect2(0, 0, 512, 1024)
+
+[node name="MuninPortrait" type="TextureRect" parent="TabletFrame"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.75
+anchor_top = 0.45
+anchor_right = 0.95
+anchor_bottom = 0.65
+texture = ExtResource("3_ravens")
+expand_mode = 1
+stretch_mode = 5
+region_enabled = true
+region_rect = Rect2(512, 0, 512, 1024)
+
+[node name="TimeSleptLabel" type="Label" parent="TabletFrame"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.2
+anchor_top = 0.15
+anchor_right = 0.8
+anchor_bottom = 0.2
+text = "The All-Father has returned..."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HuginText" type="Label" parent="TabletFrame"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.3
+anchor_top = 0.25
+anchor_right = 0.9
+anchor_bottom = 0.4
+text = "Hugin: Processing..."
 autowrap_mode = 3
 
-[node name="MuninText" type="Label" parent="."]
+[node name="MuninText" type="Label" parent="TabletFrame"]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.1
 anchor_top = 0.5
-anchor_right = 0.9
+anchor_right = 0.7
 anchor_bottom = 0.65
-grow_horizontal = 2
-text = "Munin: Remembering..."
+text = "Munin: Dreaming..."
 autowrap_mode = 3
 
-[node name="ContinueButton" type="Button" parent="."]
+[node name="ContinueButton" type="Button" parent="TabletFrame"]
+layout_mode = 1
 anchors_preset = -1
 anchor_left = 0.4
 anchor_top = 0.8
 anchor_right = 0.6
 anchor_bottom = 0.85
-grow_horizontal = 2
-grow_vertical = 0
-text = "Begin Your Day"
+text = "BEGIN YOUR DAY"
 
-[connection signal="pressed" from="ContinueButton" to="." method="_on_continue_button_pressed"]
+[connection signal="pressed" from="TabletFrame/ContinueButton" to="." method="_on_continue_button_pressed"]
