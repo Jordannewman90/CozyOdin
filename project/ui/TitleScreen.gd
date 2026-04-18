@@ -32,8 +32,8 @@ func _start_game():
 	add_child(transition)
 	transition.start_transition()
 	
-	# Wait for the "White Out" peak before checking for offline events
-	await get_tree().create_timer(1.0).timeout
+	# Wait for the "White Out" peak (now at 1.5s for the 3s surge)
+	await get_tree().create_timer(1.5).timeout
 	
 	# Check if we need to show the Raven Dashboard
 	var showed_dashboard = SaveManager.handle_offline_time()
