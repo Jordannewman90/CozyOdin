@@ -1,0 +1,4 @@
+- [ ] `[x]` Update AlignmentBezel.gd (Math & UI feedback)
+- [ ] `[x]` Update Proxy.gd (Efficiency & Visual Tiers)
+- [ ] `[x]` Update HUD.gd (Data binding)
+- [ ] `[x]` Verify changes in Godot
