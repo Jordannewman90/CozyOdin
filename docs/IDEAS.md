@@ -2,13 +2,6 @@
 
 > **This is a sandbox.** A place to capture "What if?" moments, high-level features, and polish ideas that aren't yet part of the Master PRD but worth revisiting.
 
-## 🏷️ Final Branding
-
-**Title**: **The All-Sleep**
-**Tagline**: **The Realms Drift while you dream**
-
-*   **Logic**: Highlights the **Alignment Bezel** mechanic (drifting out of sync) and the **Offline Simulation** (while you dream). It perfectly balances Norse grandeur with cozy management.
-
 ---
 
 ## 🏷️ Project Codenames (The "Snap" Rankings)

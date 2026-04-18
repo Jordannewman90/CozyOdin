@@ -1,7 +1,8 @@
-# Product Requirements Document (PRD)
+# 🛠️ Master PRD: The All-Sleep
 
-**Project Name:** Project All-Sleep (Working Title)
-**Document Status:** Master Blueprint (V8 - Complete Feature Set)
+**Tagline**: *The Realms Drift while you dream*
+
+**Document Status:** Master Blueprint (V9 - Official Branding)
 **Genre:** Cozy Time-Management / Farming Sim / Automation Puzzle
 **Target Platform:** PC / Mac / Linux (Offline Standalone Executable)
 **Art Style:** 16-bit Pixel Art (Featuring Iridescent/Holographic VFX)
@@ -11,7 +12,7 @@
 
 ## 1. Executive Summary
 
-Project All-Sleep is an offline-first, cozy management game where the player acts as an exhausted Odin desperately seeking a true vacation. The core mechanic is the "All-Sleep", a background system that tracks the real-world time the player is offline. The overarching objective is to achieve the "Perfect System"—automating a complex supply chain across the Nine Realms using programmable Runic Proxies so flawlessly that the universe no longer falls into chaos when Odin closes the game.
+The All-Sleep is an offline-first, cozy management game where the player acts as an exhausted Odin desperately seeking a true vacation. The core mechanic is the "All-Sleep", a background system that tracks the real-world time the player is offline. The overarching objective is to achieve the "Perfect System"—automating a complex supply chain across the Nine Realms using programmable Runic Proxies so flawlessly that the universe no longer falls into chaos when Odin closes the game.
 
 ---
 
