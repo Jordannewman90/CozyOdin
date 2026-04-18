@@ -11,6 +11,25 @@
 *   **Cost**: No materials required—just **Odin's Stamina**.
 *   **Gameplay**: This allows players to iterate on their "Perfect System" without resource-anxiety. It turns optimization into a meditative loop.
 
+### 🏰 Palace Customization & Expansion
+
+**Goal:** Increase the "Creative Expression" score by giving players ownership of the Asgardian Hub.
+
+#### "Day 1" (No Cost) Customizations:
+- **Banner Toggles:** Choice of Gold, Blue, or Crimson tapestries in the throne room.
+- **Ambient Resonance:** Toggle palace lighting between "Warm/Morning" and "Cool/Moody."
+- **Raven Perches:** Change where Hugin and Munin sit (shoulders vs. rafters).
+- **Throne Finish:** Choose between "Weathered Stone" or "Polished Obsidian."
+
+#### "Joint Venture" Expansions (Resource/Harmony Based):
+- **Hall of Smithing (Tier 2):** Unlock after Nidavellir. Moves the Proxy Bench to a dedicated room.
+- **The Queen's Balcony (Tier 3):** Unlock after Alfheim. A garden space for Frigg that allows for "Plant Customization."
+- **The Gallery of the All-Father (Tier 4):** A trophy room to display artifacts (like the Restored Gungnir).
+
+#### Discovery Layers:
+- **Mending the Tapestry:** Frigg needs Sun-Silk to "upgrade" the banners to iridescent versions.
+- **The "Sighing" Room:** If Frigg is sighing near a wall, it might mean she wants a window put in (requires a "Shattering Strike" from Odin).
+
 ### 2. The "Perfect Sync" Jackpot
 *   **Concept**: Achieving a 100% alignment on all three Bezel rings (a "Divine Sync") grants a special passive bonus to that specific Proxy.
 *   **Bonus Ideas**:
