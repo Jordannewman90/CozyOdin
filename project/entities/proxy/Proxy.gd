@@ -3,7 +3,7 @@ extends CharacterBody2D
 enum Context { NONE, DWARVEN, ELVEN }
 
 @export var current_context: Context = Context.NONE
-@export var is_buggy: bool = false
+@export var efficiency: float = 1.0
 
 @onready var sprite = $Sprite2D
 @onready var context_overlay = $ContextOverlay
@@ -22,12 +22,12 @@ func _ready():
 	sprite.material = mat
 
 func _on_offline_catch_up(duration: float):
-	if is_buggy:
-		return
+	# Minimum efficiency 0.1, max 1.0
+	var final_efficiency = clamp(efficiency, 0.1, 1.0)
 
-	# Logic: 1 resource every 5 minutes (300s), multiplied by Economic yield
+	# Logic: 1 resource every 5 minutes (300s), multiplied by Economic yield AND Proxy efficiency
 	var base_harvest = duration / 300.0
-	var final_yield = int(base_harvest * EconomyManager.yield_modifier)
+	var final_yield = int(base_harvest * EconomyManager.yield_modifier * final_efficiency)
 	
 	if final_yield > 0:
 		var target = find_nearest_node()
@@ -59,11 +59,20 @@ func apply_visual_context():
 			context_overlay.visible = true
 			context_overlay.modulate = Color(0.2, 0.8, 0.4)
 	
-	if is_buggy:
-		sprite.modulate = Color(1, 0.5, 0.5)
+	# Tier-based visuals
+	if efficiency > 0.95:
+		# Divine Sync: Strong iridescent pulse (handled in shader intensity later)
+		sprite.modulate = Color(1.2, 1.2, 1.2) # Overbright
+	elif efficiency > 0.7:
+		# Stable: Standard gold/white tint
+		sprite.modulate = Color(1, 1, 0.9)
+	elif efficiency < 0.4:
+		# Clumsy: Subtle red tint (not as aggressive as buggy)
+		sprite.modulate = Color(1, 0.8, 0.8)
+	else:
+		sprite.modulate = Color.WHITE
 
 func _process(_delta):
-	if is_buggy:
-		sprite.position = Vector2(randf_range(-1, 1), randf_range(-1, 1))
-	else:
-		sprite.position = Vector2.ZERO
+	# No more twitching. 
+	# Future: Could add a 'clumsy' animation state here.
+	sprite.position = Vector2.ZERO

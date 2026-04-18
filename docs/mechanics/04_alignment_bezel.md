@@ -23,8 +23,19 @@ The Alignment Bezel is a timing-based mini-game that determines how well a Runic
 
 ### Lock Mechanic
 - Player presses `E` / `ui_accept` to lock the current ring.
-- If the ring's rotation is within the tolerance window of 0° → **Perfect Lock** (green flash, snap to 0°).
-- If outside the window → **Slipped State** (red flash, screen shake, proxy marked buggy).
+- **Alignment Accuracy**: The system calculates the angular offset from 0°.
+    - **Perfect Lock (±5°)**: 100% Alignment.
+    - **Near Miss (±20°)**: 70% Alignment.
+    - **Slipped State (>45°)**: 25% Alignment.
+- **Visual Feedback**: Green (Perfect) → Yellow (Close) → Red (Slipped).
+- **No Chaos Penalty**: Proxies no longer increase realm chaos on a slip; they simply become less efficient.
+
+### Efficiency Spectrum
+A Proxy's final productivity is the average of its three ring scores.
+- **95%+**: Divine Sync (100% Efficiency + Potential Rare Drop)
+- **70-94%**: Stable (75% Efficiency)
+- **40-69%**: Distracted (40% Efficiency)
+- **0-39%**: Clumsy (10% Efficiency)
 
 ### Current Ring Options
 | Ring | Current Options | Notes |
@@ -65,16 +76,13 @@ The Alignment Bezel is a timing-based mini-game that determines how well a Runic
 
 ## Active Task List
 
-- [ ] Expand directive options: Harvest, Mend, Clear, Logistics
-- [ ] Expand context options: Dwarven, Elven (+ future realms)
-- [ ] Expand guardrail options: Max Yield 50, Leave 10, Do Not Disturb
+- [ ] Implement efficiency scaling math: Calculate average offset of all 3 rings
+- [ ] Implement "Divine Sync" bonus: 5% rare material chance at 100% alignment
+- [ ] Add "Target Zone" visual indicator (glow/highlight at 12 o'clock position)
 - [ ] Add dynamic label showing current rune name as ring spins
-- [ ] Draw "target zone" visual indicator (glow/highlight at 12 o'clock position)
-- [ ] Implement re-spin mechanic with stamina cost
-- [ ] Add audio: spin ratchet, lock thud, fail screech
-- [ ] Fix proxy targeting: let player choose which proxy to configure (not just index 0)
-- [ ] Add difficulty scaling: ring speeds increase with number of deployed proxies
-- [ ] Iridescent shader pulse on perfect lock (currently only color modulate)
+- [ ] Implement re-tuning mechanic with stamina cost at the Asgard Bench
+- [ ] Add audio: spin ratchet, lock thud, fail "clunk" (not screech)
+- [ ] Update Proxy visuals based on alignment tier (Glow vs Sparks vs Trips)
 
 ---
 

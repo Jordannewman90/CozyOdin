@@ -4,6 +4,69 @@
 
 ---
 
+## Review #2 — "The Cozy Resonance Audit"
+**Date:** 2026-04-18
+**Reviewed By:** AI Lead Designer (Antigravity)
+**Build State:** Core mechanics refined, efficiency spectrum implemented, narrative anchors drafted, stamina-based shaders live.
+**Context:** Post-Bezel refactor and the "Divine Harmony" narrative expansion.
+
+---
+
+## 🟢 What's Genuinely Improved
+
+### 1. From Punishment to "Cozy Scaling"
+The pivot from binary Success/Failure (Buggy vs. Perfect) to an **Efficiency Spectrum (0.1 - 1.0)** is the single most important mechanical change we've made. It effectively resolves the "Stress vs. Cozy" tension identified in Review #1. Players no longer feel "punished" for being bad at the Bezel; they just feel "clumsy," and the game gives them a path to optimize (Re-Tuning). This perfectly aligns with the *Stardew Valley* philosophy of "efficiency as a reward, not survival."
+
+### 2. The Emotional Anchor Is Found (Frigg)
+Review #1 warned that the game lacked a character to care about. The addition of **Frigg** and the **"Divine Harmony"** system is a masterstroke. By making her the *only* person Odin speaks to, we’ve created an intimate, secret relationship that acts as the game's emotional heartbeat. "Happy Wife, Happy Life" isn't just a meme here; it’s a high-discovery gameplay layer that makes the Asgardian Hub feel like a home.
+
+### 3. Narrative "Pull" vs. Mechanical "Push"
+The **"Search for the Shattered Spear"** quest gives the early game a clear, humorous mystery. Instead of the game "pushing" the player to learn mechanics through tutorials, the story "pulls" them through manual labor (pruning vines, mining iron) as they chase the "ghost" of Loki. This adds a sense of purpose that was previously missing.
+
+### 4. Visual Feedback (The Stamina Fade)
+The **Stamina-based Grayscale Shader** is excellent "Vibe Coding." It provides a clear mechanical indicator (stamina level) without breaking the 16-bit immersion with a cluttered HUD. Seeing Odin "lose his magic" sells the exhaustion theme more than any dialogue ever could.
+
+---
+
+## 🟡 The Remaining Risks
+
+### 5. Discovery vs. Confusion (Odin's Intuition)
+The new "Discovery Layer" for domestic tasks is exciting but high-risk. Since we aren't using a quest log, we need to be **extremely precise** with our visual tells (the "Sigh" icon, the broken vase). If the player misses these, they may feel like they are "missing the fun" or that the palace is just static.
+**The Fix**: Ensure the Internal Monologue (Thought Bubbles) fires reliably and provides enough context to point the player toward the right realm.
+
+### 6. The "Silent World" Problem
+While Odin being silent in public is a great narrative choice, we need to ensure the **other NPCs** (Heimdall, Brokk, Dagr) are talkative and distinct enough to carry the world's personality. If everyone is too stoic, the realms might feel empty.
+**The Fix**: Lean heavily into the "Loki Graffiti" and "Raven Rumors" to keep the subtext of the world noisy and alive.
+
+### 7. Creative Expression Still Lags
+We still haven't solved the "Customization" problem from Review #1. The player is still mostly an "Optimizer" and not yet a "Creator." 
+**The Fix**: The "Home Upgrades" from Frigg are a good start. We should expand this to let players choose *where* to place these upgrades in Asgard, turning the hub into a personal sanctuary.
+
+---
+
+## 📊 Updated Scorecard
+
+| Dimension | Previous | Current | Notes |
+|:----------|:---------|:--------|:------|
+| **Concept / Hook** | 9/10 | **10/10** | The "Shattered Spear" arc perfectly encapsulates the hook. |
+| **Cozy Authenticity** | 6/10 | **8/10** | Efficiency scaling removed the stress of failure. |
+| **Emotional Hook** | 4/10 | **7/10** | Frigg relationship is a strong anchor. |
+| **Session Variety** | 5/10 | **6/10** | Discovery layers add "things to look for." |
+| **Creative Expression** | 2/10 | **3/10** | Still low, but "Home Upgrades" provide a path forward. |
+| **Technical Stability**| N/A | **8/10** | Core Bezel/Proxy/Save logic is now robust. |
+
+**Average Score: 7.2 / 10** (Up from 6.0)
+
+---
+
+## 🚀 The Next Mandates
+
+1.  **Implement the "Domestic Discovery" VFX**: Create the "Sigh" and "Inspection" indicators to ensure the Harmony system isn't "lost in the dark."
+2.  **Loki's Ghost Assets**: Get the "Sigils" and "Prank Overlays" into the build to start building that "Unseen" tension.
+3.  **The "Home Upgrade" Prototype**: Create one placeable decoration in Asgard to test the "Creative Expression" loop.
+
+---
+
 ## Review #1 — "Foundation Audit"
 **Date:** 2026-04-15
 **Reviewed By:** AI Lead Designer (Antigravity — Claude Opus)

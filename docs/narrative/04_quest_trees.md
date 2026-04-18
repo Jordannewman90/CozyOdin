@@ -13,20 +13,47 @@ However, the internal design needs defined **milestone triggers** to gate conten
 
 ---
 
-## 2. Tutorial Flow (Act I)
+## 2. Main Quest: The Search for the Shattered Spear (Phase 1)
 
-| Step | Trigger | Action | Unlocks |
-|:-----|:--------|:-------|:--------|
-| 1 | First boot | Heimdall introduction; teach WASD + interaction | Basic movement |
-| 2 | First harvest | Walk to Star-Iron node in Asgard, press E | Resource collection |
-| 3 | First sleep | Press "Go to Sleep" button | Offline timer starts |
-| 4 | Second boot | TimeEngine calculates first offline duration | Raven Report system |
-| 5 | Bifrost unlocks | Vault reaches 5+ Star-Iron | Nidavellir accessible |
-| 6 | First realm visit | Enter Nidavellir | Realm-specific harvesting |
-| 7 | First Proxy | Vault reaches 20+ Star-Iron | Proxy Crafting Bench, Bezel |
-| 8 | First automation | Deploy a configured Proxy | Offline harvesting works |
-| 9 | First long sleep | Close game, return after 4+ hours | Full status report |
-| 10 | Alfheim opens | Complete first Moot or reach 50+ total resources | Third realm |
+This is the core progression arc for Act I. It gates the player's "Divine" abilities (Dash, Transmutation) behind the manual labor of cleaning the realms.
+
+### Phase 1: The Accusation (Asgard)
+*   **Narrative**: Odin wakes up gray-scaled and exhausted. He realizes Gungnir is missing.
+*   **Trigger**: First interaction with the empty Spear-Rack near the throne.
+*   **Dialogue**: Hugin & Munin suggest Loki was "snooping." Odin sets off in a huff.
+*   **Objective**: Reach Nidavellir via the Bifrost.
+
+### Phase 2: The Inert Rod (Nidavellir)
+*   **Narrative**: Brokk & Eitri are using a "weird metal rod" to stir their slag. They don't realize it's Gungnir's core.
+*   **Trigger**: Clearing the first major "Deep Freeze" chaos node in the Dwarven Forge.
+*   **Objective**: Export 50 Star-Iron to the Asgard Vault to prove the "Forge is back online."
+*   **Reward**: **The Inert Shaft** (Key Item). Odin can now "Chop/Smash" faster, but still no magic.
+
+### Phase 3: The Song of the Sap (Alfheim)
+*   **Narrative**: The shaft is cold and dead. The Elves explain that the spear's "soul" evaporated when the world became chaotic. 
+*   **Trigger**: Entering Alfheim with the Inert Shaft.
+*   **Objective**: Prune the "Overgrowth" chaos tiles around 5 World-Trees. As they bloom, they drip Mana-Sap onto the spear.
+*   **Reward**: **The Pulsing Core** (Key Item update). The spear starts to glow cyan/magenta.
+
+### Phase 4: The Divine Snap (Asgard)
+*   **Narrative**: Returning to the Throne to unite the spear's form with Odin's presence.
+*   **Trigger**: Sitting on the Hlidskjalf Throne with the Pulsing Core while at < 10% Stamina.
+*   **Action**: A mandatory "Deep Wind" (Hold E).
+*   **Payoff**: A color-surge resets Odin to Full Rainbow. **Gungnir Restored.**
+*   **Unlocks**: Bifrost Dash (Space), Prismatic Transmutation (Harvesting boost).
+
+---
+
+## 3. Tutorial Flow (Technical Milestones)
+
+| Step | Milestone | Narrative Context | Unlocks |
+|:-----|:----------|:------------------|:--------|
+| 1 | First Boot | "I'm too old for this." | Movement |
+| 2 | Empty Rack | "Loki has my spear!" | The Search Quest |
+| 3 | Nidavellir | "Found the thief's tracks." | World Travel |
+| 4 | Forge Restart | "Brokk found a 'stirring stick'." | Proxy Bench |
+| 5 | Alfheim | "The Elves are singing to my rod." | Resource Trade |
+| 6 | Restoration | "The All-Father is back." | Divine Dash / Transmute |
 
 ---
 

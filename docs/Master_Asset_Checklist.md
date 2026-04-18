@@ -53,6 +53,7 @@
 | `dagr_idle.png` | Sheet | 4 | 🔴 | Elven caretaker, gentle demeanor |
 | `brokk_idle.png` | Sheet | 4 | 🔴 | Stocky dwarf smith, hammer at side |
 | `eitri_idle.png` | Sheet | 4 | 🔴 | Lean dwarf smith, precision tools |
+| `frigg_idle.png` | Sheet | 4 | 🔴 | Wise goddess, reading/observing |
 | `hugin.png` | Static | 1 | 🔴 | Raven sprite (thought) |
 | `munin.png` | Static | 1 | 🔴 | Raven sprite (memory) |
 

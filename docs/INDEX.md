@@ -22,6 +22,7 @@ When starting agentic development on any feature, **read the relevant doc first*
 |:---------|:-----|:------------|
 | **Master PRD** | [Master_PRD.md](Master_PRD.md) | V8 product requirements — the parent blueprint |
 | **Sprite Manifest** | [../assets/docs/sprite_manifest.md](../assets/docs/sprite_manifest.md) | Complete asset catalog for all 16-bit pixel art |
+| **Ideas Hub** | [IDEAS.md](IDEAS.md) | A sandbox for creative brainstorming and future features |
 
 ---
 

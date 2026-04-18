@@ -22,9 +22,11 @@ Crafted at Proxy Bench → Programmed via Bezel → Deployed to Realm → Operat
 ### States
 | State | Efficiency | Chaos Impact | Visual |
 |:------|:-----------|:-------------|:-------|
-| **Perfect** | 100% | None | Normal sprite, iridescent glow |
-| **Buggy** | 10-25% | 2x Chaos multiplier | Red tint, twitching position |
-| **Stony Idle** (planned) | 0% | None | Grey, motionless |
+| **Divine Sync** | 100% | Slows Chaos | Normal sprite, iridescent glow |
+| **Stable** | 75% | None | Standard sprite, gold sparks |
+| **Distracted** | 40% | None | Paces aimlessly |
+| **Clumsy** | 10% | None | Red tint, "tripping" animation |
+| **Stony Idle** | 0% | None | Grey, motionless |
 
 ---
 

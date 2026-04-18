@@ -67,8 +67,10 @@ A timing-based, tactile UI resembling a high-end mechanical chronograph used to 
     * **Outer Dial (Directive):** What the proxy does (e.g., Harvest, Mend). Slowest rotation.
     * **Inner Dial (Context):** The environment (e.g., Dwarven Forge, Elven Woods). Medium rotation.
     * **Center Bezel (Guardrail):** Strict constraints (e.g., Max Yield, Do Not Disturb). Fastest rotation.
-* **The "Slipped" State:** Missing the input timing locks in the wrong Rune. The Proxy becomes "buggy," displaying a twitching idle animation, harvesting at 10-25% capacity, and multiplying the Realm's Chaos Escalation rate.
-* **Push-Your-Luck:** Unlocking the Bezel to re-spin the wheels costs Stamina.
+* **The Alignment Spectrum:** Instead of binary success, the game measures the angular offset of each lock.
+    * **Divine Sync:** Perfect timing yields 100% efficiency and rare drop potential.
+    * **Clumsy State:** Poor timing results in reduced productivity (down to 10%) but **never** increases realm chaos.
+* **Push-Your-Luck (Re-Tuning):** Players can spend Stamina to re-spin a slipped ring at the Asgard Proxy Bench to optimize their "Perfect System."
 
 ---
 

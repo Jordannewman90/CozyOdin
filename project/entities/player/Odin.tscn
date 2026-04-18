@@ -1,10 +1,10 @@
 [gd_scene load_steps=5 format=3 uid="uid://c1v1v1v1v1v1v"]
 
 [ext_resource type="Script" path="res://entities/player/Odin.gd" id="1_script"]
-[ext_resource type="Texture2D" uid="uid://c2v2v2v2v2v2v" path="res://icon.svg" id="2_texture"]
+[ext_resource type="Texture2D" path="res://assets/sprites/player/odin_idle.png" id="2_texture"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_1"]
-size = Vector2(32, 32)
+size = Vector2(16, 16)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2"]
 radius = 40.0

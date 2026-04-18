@@ -1,5 +1,9 @@
 # AI_CHANGELOG.md
 
+## 2026-04-18
+- **Documentation**: Initialized `docs/IDEAS.md` to capture creative brainstorming (Re-Tuning, Perfect Sync bonuses, etc.).
+- **Design Pivot**: Refined the Alignment Bezel PRD to use a "Cozy Scaling" spectrum (Efficiency %) instead of binary failure/chaos increase.
+
 ## 2026-04-15
 - **Godot MCP Server**: Installed Node.js MCP server in `tools/godot-mcp` and configured `~/.gemini/antigravity/mcp_config.json` with absolute paths. This allows the AI agent to directly interface with the Godot engine.
 - **Asset Pipeline**: Downscaled Odin's iridescent concept art to a 64x64 pixel sprite reference (`assets/reference/odin_sprite_64x64.png`).

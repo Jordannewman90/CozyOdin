@@ -20,6 +20,9 @@ func _ready():
 	sleep_button.pressed.connect(_on_sleep_pressed)
 	open_bezel_button.pressed.connect(_on_open_bezel_pressed)
 	
+	sleep_button.focus_mode = Control.FOCUS_NONE
+	open_bezel_button.focus_mode = Control.FOCUS_NONE
+	
 	# Hide the label and overlay initially
 	offline_label.modulate.a = 0
 	fade_overlay.color.a = 0
@@ -44,7 +47,13 @@ func _on_crisis_started(crisis_name: String, _modifier: float):
 	tween.tween_property(crisis_banner, "modulate:a", 0.0, 2.0)
 	tween.tween_callback(func(): crisis_banner.visible = false; crisis_banner.modulate.a = 1.0)
 func _on_open_bezel_pressed():
+	# Prevent opening multiple bezels
+	if get_node_or_null("AlignmentBezel"):
+		return
+		
+	open_bezel_button.release_focus() # Prevent spacebar from re-triggering the button
 	var bezel = load("res://ui/alignment_bezel/AlignmentBezel.tscn").instantiate()
+	bezel.name = "AlignmentBezel" # Set name for the guard check
 	add_child(bezel)
 	bezel.configuration_locked.connect(_on_bezel_configuration_locked)
 
@@ -52,7 +61,7 @@ func _on_bezel_configuration_locked(results: Dictionary):
 	print("New Proxy Configuration Locked: ", results)
 	var proxy = get_tree().get_nodes_in_group("proxy")[0] if get_tree().get_nodes_in_group("proxy").size() > 0 else null
 	if proxy:
-		proxy.is_buggy = results["is_buggy"]
+		proxy.efficiency = results["alignment_efficiency"]
 		if results["context"] == "Dwarven":
 			proxy.current_context = proxy.Context.DWARVEN
 		else:

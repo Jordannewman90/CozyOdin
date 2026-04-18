@@ -23,8 +23,7 @@ func register_proxy(proxy_id: String, position: Vector2, realm: String):
 		"id": proxy_id,
 		"pos": {"x": position.x, "y": position.y},
 		"realm": realm,
-		"efficiency": 1.0,
-		"is_buggy": false
+		"efficiency": 1.0
 	}
 	game_data["proxies"].append(new_proxy)
 

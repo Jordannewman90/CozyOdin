@@ -37,7 +37,7 @@ func _unhandled_input(event):
 				if SaveManager.game_data.squad.size() < 3:
 					var data = {
 						"id": target.name,
-						"is_buggy": target.is_buggy,
+						"efficiency": target.efficiency,
 						"current_context": target.current_context
 					}
 					SaveManager.game_data.squad.append(data)
@@ -52,12 +52,12 @@ func _unhandled_input(event):
 			var new_proxy = proxy_scene.instantiate()
 			
 			# Restore state
-			new_proxy.is_buggy = data["is_buggy"]
+			new_proxy.efficiency = data.get("efficiency", 1.0)
 			new_proxy.current_context = data["current_context"]
 			new_proxy.global_position = global_position + Vector2(20, 0) # Offset slightly
 			
 			get_parent().add_child(new_proxy)
-			print("Proxy Deployed! Squad remaining: ", SaveManager.game_data.squad.size())
+			print("Proxy Deployed! Efficiency: ", new_proxy.efficiency)
 
 func _physics_process(delta):
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -77,6 +77,11 @@ func _physics_process(delta):
 		trail_timer = 0
 
 	move_and_slide()
+	
+	# Update Iridescent Shader based on stamina
+	if sprite.material:
+		var pct = current_stamina / max_stamina
+		sprite.material.set_shader_parameter("stamina_pct", pct)
 
 func spawn_ghost_trail():
 	var ghost = Sprite2D.new()

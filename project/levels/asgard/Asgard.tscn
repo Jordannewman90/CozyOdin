@@ -5,6 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://c6v6v6v6v6v6v" path="res://entities/resources/HarvestableNode.tscn" id="3_node"]
 [ext_resource type="PackedScene" uid="uid://c7v7v7v7v7v7v" path="res://entities/proxy/Proxy.tscn" id="4_proxy"]
 [ext_resource type="PackedScene" uid="uid://c9v9v9v9v9v9v" path="res://systems/BifrostTransit.tscn" id="5_portal"]
+ [ext_resource type="Texture2D" path="res://assets/sprites/world/asgard/asgard_floor_tile.png" id="6_floor"]
 
 [node name="Asgard" type="Node2D"]
 
@@ -20,6 +21,18 @@ grow_vertical = 2
 color = Color(0.180392, 0.133333, 0.184314, 1)
 
 [node name="World" type="Node2D" parent="."]
+ 
+ [node name="FloorPattern" type="TextureRect" parent="World"]
+ texture_filter = 1
+ custom_minimum_size = Vector2(2000, 2000)
+ offset_left = -1000.0
+ offset_top = -1000.0
+ offset_right = 1000.0
+ offset_bottom = 1000.0
+ texture = ExtResource("6_floor")
+ stretch_mode = 1
+ 
+ [node name="FloorLayer" type="TileMapLayer" parent="World"]
 
 [node name="Odin" parent="World" instance=ExtResource("1_odin")]
 position = Vector2(320, 180)
