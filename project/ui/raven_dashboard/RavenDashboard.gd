@@ -22,20 +22,40 @@ var munin_rumors = [
 	"The realms feel... quieter without you. But they are healing."
 ]
 
+var _offline_seconds: float
+var _resources_earned: int
+var _chaos_delta: float
+var _data_set: bool = false
+
 func setup_report(offline_seconds: float, resources_earned: int, chaos_delta: float):
+	_offline_seconds = offline_seconds
+	_resources_earned = resources_earned
+	_chaos_delta = chaos_delta
+	_data_set = true
+	
+	# If we are already ready, apply immediately. 
+	# If not, _ready() will handle it.
+	if is_inside_tree():
+		_apply_report_ui()
+
+func _ready():
+	if _data_set:
+		_apply_report_ui()
+
+func _apply_report_ui():
 	# 1. Format Time
-	var hours = int(offline_seconds / 3600)
-	var minutes = int((int(offline_seconds) % 3600) / 60)
+	var hours = int(_offline_seconds / 3600)
+	var minutes = int((int(_offline_seconds) % 3600) / 60)
 	time_label.text = "You slept for %d hours and %d minutes." % [hours, minutes]
 	
 	# 2. Hugin (Facts)
 	var fact = hugin_facts[randi() % hugin_facts.size()]
-	hugin_label.text = "HUGIN: \"All-Father, you have been away. %s We secured %d materials in your absence.\"" % [fact, resources_earned]
+	hugin_label.text = "HUGIN: \"All-Father, you have been away. %s We secured %d materials in your absence.\"" % [fact, _resources_earned]
 	
 	# 3. Munin (Feeling)
 	var rumor = munin_rumors[randi() % munin_rumors.size()]
 	var chaos_comment = ""
-	if chaos_delta > 0:
+	if _chaos_delta > 0:
 		chaos_comment = "The world felt your absence; chaos took root in the shadows."
 	else:
 		chaos_comment = "Your systems held. The world was peaceful."

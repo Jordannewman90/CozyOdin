@@ -34,7 +34,7 @@ tracks/1/keys = {
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_main"]
 _data = {
-"fade_in_out": Sub_resource("Animation_fade")
+"fade_in_out": SubResource("Animation_fade")
 }
 
 [node name="BifrostTransition" type="CanvasLayer"]
@@ -67,5 +67,5 @@ color = Color(1, 0.843137, 0, 1)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
-"": Sub_resource("AnimationLibrary_main")
+"": SubResource("AnimationLibrary_main")
 }

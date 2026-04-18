@@ -29,18 +29,19 @@ func register_proxy(proxy_id: String, position: Vector2, realm: String):
 
 func _ready():
 	load_game()
-	_handle_offline_time()
+	# Removed _handle_offline_time() from here to prevent boot-clash
 
-func _handle_offline_time():
+func handle_offline_time() -> bool:
 	var last_time = game_data.get("timestamp", 0)
 	if last_time == 0:
-		return # First run
+		save_game() # Establish first timestamp
+		return false # First run
 		
 	var current_time = Time.get_unix_time_from_system()
 	var offline_seconds = current_time - last_time
 	
 	if offline_seconds < 60: 
-		return # Too short for a report
+		return false # Too short for a report
 		
 	# 1. Simulate Gains
 	# Each proxy earns 1 resource per hour (3600s)
@@ -82,6 +83,8 @@ func _handle_offline_time():
 		
 		# Pause game while dashboard is open
 		get_tree().paused = true
+		return true
+	return false
 
 func save_game():
 	game_data["timestamp"] = Time.get_unix_time_from_system()

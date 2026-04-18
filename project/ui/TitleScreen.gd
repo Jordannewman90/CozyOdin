@@ -32,7 +32,16 @@ func _start_game():
 	add_child(transition)
 	transition.start_transition()
 	
-	# Wait for the "White Out" peak before swapping scenes
+	# Wait for the "White Out" peak before checking for offline events
 	await get_tree().create_timer(1.0).timeout
 	
-	get_tree().change_scene_to_file("res://levels/asgard/Asgard.tscn")
+	# Check if we need to show the Raven Dashboard
+	var showed_dashboard = SaveManager.handle_offline_time()
+	
+	if showed_dashboard:
+		# Wait for the dashboard to be closed before proceeding
+		# We'll listen for the "Continue" signal or just check the dashboard instance
+		# For now, we'll proceed to the scene but keep it paused
+		get_tree().change_scene_to_file("res://levels/asgard/Asgard.tscn")
+	else:
+		get_tree().change_scene_to_file("res://levels/asgard/Asgard.tscn")
