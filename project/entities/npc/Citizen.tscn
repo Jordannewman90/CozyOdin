@@ -1,0 +1,18 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://entities/npc/Citizen.gd" id="1_script"]
+
+[node name="Citizen" type="CharacterBody2D"]
+script = ExtResource("1_script")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+
+[node name="BarkLabel" type="Label" parent="."]
+offset_top = -40.0
+offset_right = 100.0
+offset_bottom = -17.0
+text = "Bark!"
+horizontal_alignment = 1
+
+[node name="BarkTimer" type="Timer" parent="."]
+one_shot = true

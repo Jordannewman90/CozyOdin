@@ -5,6 +5,9 @@
 [ext_resource type="PackedScene" uid="uid://c6v6v6v6v6v6v" path="res://entities/resources/HarvestableNode.tscn" id="3_node"]
 [ext_resource type="PackedScene" uid="uid://c9v9v9v9v9v9v" path="res://systems/BifrostTransit.tscn" id="4_portal"]
 
+[ext_resource type="PackedScene" path="res://entities/npc/Citizen.tscn" id="5_citizen"]
+[ext_resource type="Script" path="res://systems/PopulationManager.gd" id="6_pop_script"]
+
 [node name="Alfheim" type="Node2D"]
 
 [node name="Background" type="CanvasLayer" parent="."]
@@ -42,6 +45,11 @@ health = 5
 position = Vector2(50, 50)
 target_scene = "res://levels/asgard/Asgard.tscn"
 portal_color = Color(0.1, 0.8, 0.2, 1)
+
+[node name="PopulationManager" type="Node2D" parent="World"]
+script = ExtResource("6_pop_script")
+citizen_scene = ExtResource("5_citizen")
+realm_name = "alfheim"
 
 [node name="UI" type="CanvasLayer" parent="."]
 
