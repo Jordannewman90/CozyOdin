@@ -77,6 +77,27 @@
 
 ---
 
+## 🌌 Cozy Chaos & The Caretaker Loop
+
+### 8. The "No Permanent Loss" Rule
+*   **Concept**: Chaos should never permanently destroy a resource node or a proxy.
+*   **Gameplay**: It only "clutters" or "freezes" them, requiring Odin’s care to restart. This maintains the "Cozy" safety net while still giving players a reason to return.
+
+### 9. Proxy "Mend" Mode
+*   **Concept**: A specific directive for Proxies that focuses on maintenance rather than output.
+*   **Gameplay**: Setting a Proxy to "Mend" stops resource gain but completely halts Chaos escalation in its local area. This is a "Vacation Mode" for players who want to step away from the game for a long time without coming back to a mess.
+
+### 10. Sensory Cleaning Rewards
+*   **Concept**: Make the act of clearing chaos feel as satisfying as *PowerWash Simulator*.
+*   **Visuals**: Clearing a large patch of Chaos (ice/vines) triggers a "Rainbow Flare" VFX.
+*   **Audio**: A satisfying harmonic chime or "shatter" sound that makes the player feel like they’ve brought music back to the world.
+
+### 11. Emotional Feedback
+*   **Concept**: Use the Population Scaler to drive the player's motivation.
+*   **Gameplay**: Citizens in the realm should explicitly mention how much happier they are when the "Rainbow God" clears the vines. Seeing them come out to dance is the ultimate "Cozy" high score.
+
+---
+
 ## 🛠️ Technical Polish
 
 ### 8. The "Mechanical Feel" (Haptics)
