@@ -39,7 +39,7 @@ Project All-Sleep's core loop is a **cozy management cycle** structured around t
 |:------|:-------------|:-----------------|
 | **1. The Wake-Up** | Game boots, OS clock is read | `TimeEngine.gd` |
 | **2. Status Report** | Review Raven Dashboard for offline events | `HUD.gd`, Dashboard UI |
-| **3. Investigate & Restore** | Travel to realms, clear chaos tiles | `BifrostTransit.gd`, Chaos Overlays |
+| **3. Investigate & Restore** | Travel to realms, clear chaos tiles. **Requires manual purification for Ruined (100% Chaos) realms.** | `BifrostTransit.gd`, Chaos Overlays |
 | **4. Manage Supply Chain** | Allocate resources into 3 buckets | Economy UI, `EconomyManager.gd` |
 | **5. Mediation** (Seasonal) | Balance diplomatic grievances | Mediation Scale UI |
 | **6. Deploy & Configure** | Program and position Runic Proxies | `AlignmentBezel.gd`, `Proxy.gd` |
@@ -52,10 +52,13 @@ Project All-Sleep's core loop is a **cozy management cycle** structured around t
 The player's journey follows a deliberate escalation:
 
 ### Act I — The Drowsy King (Tutorial)
-- Odin wakes for the first time. Only Asgard is accessible.
-- Player learns movement, harvesting, and the Save & Sleep flow.
-- Bifrost unlocks → Nidavellir becomes reachable.
-- **Goal:** Understand the offline time loop.
+- **The Discovery:** Odin finds a **Crate of Star-Iron Chassis** near the throne, but the Proxy Bench is inert.
+- **The Blockage:** Odin tries to leave but finds the Bifrost choked by Primal Overgrowth.
+- **The Failed Chop:** Odin attempts to clear the vines manually; they **instantly regrow** with an iridescent pulse, blocking his path.
+- **Heimdall's Wisdom:** Heimdall appears and explains that Chaos "feeds on divine effort," directing Odin to Frigg for a **Runic Seed**.
+- **The First Craft:** Odin visits Frigg and finally "wakes" the Proxy Bench to craft the **"Bridge Keeper"**.
+- **Automation First:** The Bridge Keeper clears the vines, proving Proxies are the only way to restore the realms.
+- **Goal:** Learn the core "Automation as Restoration" philosophy.
 
 ### Act II — The Delegator
 - Player discovers resource shortages after waking up from longer sleeps.
@@ -101,7 +104,7 @@ The player's journey follows a deliberate escalation:
 - [ ] Design the "Perfect System" win condition detection math
 - [ ] Define session pacing hooks (what makes the player *want* to come back after closing?)
 - [ ] Create onboarding flow for the Raven Dashboard
-- [ ] Determine if there's a "fail state" or if the game is purely cozy (can you lose realms permanently?)
+- [x] Determine if there's a "fail state" or if the game is purely cozy (can you lose realms permanently?) **[RESOLVED: Heroic Restoration Loop]**
 
 ---
 

@@ -4,8 +4,6 @@ extends CharacterBody2D
 @export var max_stamina: float = 100.0
 
 var current_stamina: float = 100.0
-var trail_timer: float = 0.0
-var trail_frequency: float = 0.05
 
 @onready var sprite = $Sprite2D
 @onready var interaction_area = $InteractionArea
@@ -65,42 +63,31 @@ func _physics_process(delta):
 	
 	if direction != Vector2.ZERO:
 		velocity = direction * move_speed
-		if direction.x != 0:
-			sprite.flip_h = direction.x < 0
-		
-		# Play walk animation
-		anim_player.play("walk_down")
-		
-		# Handle Ghost Trail
-		trail_timer += delta
-		if trail_timer >= trail_frequency:
-			spawn_ghost_trail()
-			trail_timer = 0
 	else:
-		velocity = velocity.move_toward(Vector2.ZERO, move_speed)
+		velocity = velocity.move_toward(Vector2.ZERO, move_speed * 10.0 * delta)
+	
+	if velocity.length() > 5.0:
+		var anim_to_play = "walk_down"
+		if abs(direction.x) > abs(direction.y):
+			if direction.x > 0:
+				anim_to_play = "walk_east"
+			else:
+				anim_to_play = "walk_west"
+		else:
+			if direction.y > 0:
+				anim_to_play = "walk_down"
+			else:
+				anim_to_play = "walk_up"
+		
+		if not anim_player.is_playing() or anim_player.current_animation != anim_to_play:
+			anim_player.play(anim_to_play)
+	else:
 		anim_player.stop()
-		sprite.frame = 0 # Return to idle frame
-		trail_timer = 0
+		sprite.frame = 0 # Force idle frame
+		if direction == Vector2.ZERO:
+			velocity = Vector2.ZERO
 
 	move_and_slide()
-	
-	# Update Iridescent Shader based on stamina
-	if sprite.material:
-		var pct = current_stamina / max_stamina
-		sprite.material.set_shader_parameter("stamina_pct", pct)
-
-func spawn_ghost_trail():
-	var ghost = Sprite2D.new()
-	ghost.texture = sprite.texture
-	ghost.hframes = sprite.hframes
-	ghost.vframes = sprite.vframes
-	ghost.frame = sprite.frame
-	ghost.global_position = global_position
-	ghost.flip_h = sprite.flip_h
-	ghost.scale = sprite.scale
-	ghost.material = sprite.material
-	ghost.set_script(load("res://entities/player/GhostTrail.gd"))
-	get_parent().add_child(ghost)
 
 func consume_stamina(amount: float):
 	current_stamina = max(0, current_stamina - amount)

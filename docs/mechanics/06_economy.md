@@ -1,25 +1,26 @@
-# Economy & The Three-Bucket System
+# Economy & The Blessing System
 
 **Category:** Mechanics — Economy
 **Status:** 🟡 Partially Implemented
 **Related Code:** `project/systems/EconomyManager.gd`, `project/ui/HUD.gd`
-**Supersedes:** Section in [features/05_Economy_And_Mediation.md](../features/05_Economy_And_Mediation.md)
 
 ---
 
 ## 1. Overview
 
-The economy is a strategic inventory management system. Every resource harvested must be allocated across three buckets before logging off. This is the **tension engine** — harvesting is easy, but *distributing correctly* is the puzzle.
+The economy in *Cozy Odin* is built on **Generosity, not Scarcity.** All resources (Star-Iron, Mana-Sap) go directly to Odin's inventory. The strategic layer exists in the **Choice to Give Back.**
 
 ---
 
-## 2. The Three Buckets
+## 2. The Blessing System
 
-| Bucket | Purpose | Consequence of Neglect |
-|:-------|:--------|:----------------------|
-| **Realm Upkeep** | Resources left in local realm storage | Immediate offline chaos escalation |
-| **Trade Routes** | Auto-exported to maintain cross-realm dependencies | Triggers diplomatic friction → Grand Trade Moot |
-| **Asgard Vault** | Odin's personal treasury | Can't upgrade tools, craft Proxies, or pay Mediation fines |
+Instead of mandatory upkeep, Odin can "Bless" a realm via its **Offering Altar.**
+
+| Action | Cost | Instant Gratification | Offline Reward |
+|:-------|:-----|:----------------------|:---------------|
+| **Small Offering** | 10 Iron | NPC Cheer / Mini-Glow | Slight Chaos reduction |
+| **Greater Blessing** | 50 Iron | Sky-color shift / Music swell | **FESTIVAL UNLOCKED:** Massive Chaos clear + Gift Chest |
+| **Divine Infusion** | 100 Iron | "Sun Rise" event / All NPCs bow | **GLOWING ERA:** Realm is immune to Chaos for 48 hours |
 
 ### Resource Types (MVP)
 | Resource | Source Realm | Primary Use |
@@ -61,12 +62,11 @@ The economy is a strategic inventory management system. Every resource harvested
 
 ## Active Task List
 
-- [ ] Design and implement Three-Bucket allocation UI
+- [ ] Design and implement the **Offering Altar** interaction (Instant Gratification)
 - [ ] Add Mana-Sap as a second resource type in SaveManager schema
-- [ ] Implement Realm Upkeep consumption logic (resources drain from local storage offline)
-- [ ] Implement Trade Route dependency system (Realm A exports X to Realm B)
-- [ ] Connect crisis triggers to actual trade deficit data (not just random)
-- [ ] Define exact Upkeep/Trade/Vault percentage splits (player-configurable? fixed?)
+- [ ] Implement **Festival Simulation** logic (Events that process during the All-Sleep)
+- [ ] Create **Gift Chest** spawning system (Rewards found upon waking)
+- [ ] Connect Festival success to massive Chaos reduction thresholds
 - [ ] Add resource icons and counts to HUD
 
 ---

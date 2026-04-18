@@ -20,25 +20,55 @@ The All-Sleep is an offline-first, cozy management game where the player acts as
 
 1. **The Wake-Up:** The game calculates real-world offline duration upon boot via local OS timestamps.
 2. **The Status Report:** Review the Raven Dashboard (Hugin & Munin) for incident reports, broken dependencies, and realm Chaos Levels.
-3. **Investigate & Restore:** Travel to realms to clear environmental hazards caused by offline decay or buggy proxies, utilizing Kinetic Resonance to maintain energy.
-4. **Manage the Supply Chain:** Allocate harvested resources into three distinct economic buckets (Upkeep, Trade, Vault) to prep for the next sleep cycle.
-5. **Mediation (Seasonal):** Every 7 in-game days during the "Grand Trade Moot," balance diplomatic grievances caused by cross-realm trade friction.
-6. **Deploy & Configure:** Construct and program Runic Proxies via the "Alignment Bezel" mini-game to automate localized tasks.
-7. **The All-Sleep:** Spend remaining Stamina, save, and close the game to restart the offline timer.
+3. **Investigate & Restore:** Travel to realms to clear environmental hazards or prune Chaos vines restricted citizens.
+4. **The Blessing:** Visit Offering Altars to "Gift" resources back to the realms, unlocking offline Festivals and instant NPC celebrations.
+5. **Deploy & Configure:** Construct and program Runic Proxies via the "Alignment Bezel" mini-game to automate localized tasks.
+6. **The All-Sleep:** Spend remaining Stamina, save, and close the game to restart the offline timer.
 
 ---
 
-## 3. Living World: The Population Scaler
+---
 
-To provide visual feedback for realm restoration, the number of active NPCs scales dynamically with the local Chaos Level.
+## 3. Fail State Philosophy: Heroic Restoration
+
+*The All-Sleep* adheres to a **"No Permanent Loss"** contract. The game never presents a "Game Over" screen or permanently deletes progress. Instead, failure is treated as a **"Call to Presence."**
+
+### A. The "Ruined" State (100% Chaos)
+When a realm reaches 100% Chaos (Ruined):
+*   **Automation Collapse:** All deployed Proxies in that realm are immediately "Halted" and returned to the Asgard Vault.
+*   **Bifrost Lockdown:** The Bifrost portal to that realm remains open only for Odin himself.
+*   **Manual Purification:** Odin must physically visit the realm and manually "farm" (clear chaos nodes, prune vines, or shatter ice) to reduce Chaos below a **Stability Threshold (50%)**.
+*   **Restoration:** Once stabilized, the realm music shifts back to peaceful tones, and Proxies can be redeployed.
+
+---
+
+## 4. Living World: The Population Scaler & Pathway Restoration
+
+To provide visual feedback for realm restoration, the number of active NPCs scales dynamically with the local Chaos Level and the **Openness of Pathways.** 
+
+*   **Restoration as Freedom:** As Odin or his Proxies clear Chaos (Ice/Vines) from designated "Traffic Nodes," NPCs will physically walk into those regions to sit, chat, or work. 
+*   **The Emotional Win:** A "Pristine" realm isn't just clean—it is **Busy.**
+
+## 5. Jim: The Interdimensional Tourist (Atmospheric NPC)
+
+To ground the epic scale of the game in "Cozy" absurdity, a single **Modern Human NPC** named **Jim** appears randomly across all Nine Realms. Jim is a **Vibe Coding Millennial Hipster from Austin**, Texas, who accidentally "worked remote" into the wrong dimension.
+
+*   **Zero Utility:** He provides no quests, no items, and no rewards. He is purely an atmospheric "glitch."
+*   **Behaviors:** 
+    *   **The Wanderer:** Occasionally walks across the background during serious narrative moments.
+    *   **The Blocked:** Often found trapped behind Chaos barriers; when freed, he simply walks off-screen without acknowledgment.
+    *   **The Observer:** Found in absurd locations (e.g., sitting on a ledge in Helheim) simply scrolling through his phone or eating a sandwich/banana.
+*   **Dialogue Themes:** He only ever asks about modern technology or conveniences (e.g., cell signal, Wi-Fi, USB ports, "Where is the nearest Starbucks?").
+*   **The "Divine Duty":** While Odin gets nothing for helping him, leaving Jim trapped in Chaos vines feels "Undivine." Clearing his path is a passive act of divine kindness that rewards the player with a humorous, jarring dialogue line.
 
 ### A. Population Density
-| Chaos % | NPC Count | Behavior |
-|:--------|:----------|:---------|
-| **0 - 10%** | 5 - 8 | Thriving. Citizens are dancing, sitting, or chatting. |
-| **11 - 40%**| 2 - 3 | Functional. Citizens are walking between workstations. |
-| **41 - 70%**| 1 | Survival. A lone scout or worried citizen near the portal. |
-| **71 - 100%**| 0 | Abandoned. The realm is too dangerous for civilians. |
+| Chaos % | Tier | NPC Count | Behavior |
+|:--------|:-----|:----------|:---------|
+| **0 - 10%** | **Stable** | 5 - 8 | Thriving. Citizens are dancing, sitting, or chatting. |
+| **11 - 40%**| **Unstable**| 2 - 3 | Functional. Citizens are walking between workstations. |
+| **41 - 70%**| **Turbulent**| 1 | Survival. A lone scout or worried citizen near the portal. |
+| **71 - 99%**| **Collapse**| 0 | Abandoned. The realm is too dangerous for civilians. |
+| **100%** | **Ruined** | 0 | **Halted.** Proxies removed. Requires Odin's manual presence. |
 
 ### B. The Bark System
 Citizens do not have dialogue trees. They use overhead "Bark Bubbles" that trigger as Odin passes by, offering gratitude or commentary on the realm's health.
@@ -83,7 +113,16 @@ The hub expands as Odin stabilizes the realms and improves his Harmony with Frig
 
 ## 6. The Search for the Shattered Spear (Narrative Arc)
 
-*   **Act I Goal:** Gungnir is missing/shattered. Odin must "pull weeds by hand" and investigate Loki's tracks in Nidavellir and Alfheim to re-forge the staff.
+### Act I — The Drowsy King (Tutorial)
+- **The Discovery:** Odin finds a **Crate of Star-Iron Chassis** near the throne, but the Proxy Bench is inert.
+- **The Blockage:** Odin tries to leave but finds the Bifrost choked by Primal Overgrowth.
+- **The Failed Chop:** Odin attempts to clear the vines manually; they **instantly regrow** with an iridescent pulse, blocking his path.
+- **Heimdall's Wisdom:** Heimdall appears and explains that Chaos "feeds on divine effort," directing Odin to Frigg for a **Runic Seed**.
+- **The First Craft:** Odin visits Frigg and finally "wakes" the Proxy Bench to craft the **"Bridge Keeper"**.
+- **Automation First:** The Bridge Keeper clears the vines, proving Proxies are the only way to restore the realms.
+- **Goal:** Learn the core "Automation as Restoration" philosophy.
+
+*   **Act II Goal:** Gungnir is missing/shattered. While the **Bridge Keeper** maintains the path, Odin must investigate Loki's tracks in Nidavellir and Alfheim to recover the "Inert Shaft" and "Mana-Sap" needed to re-forge the staff.
 *   **The Payoff:** Restoring Gungnir restores Odin's full rainbow palette and unlocks his magical move-set (Dash, Transmutation).
 
 ---

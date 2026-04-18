@@ -9,17 +9,27 @@
 
 ## 1. Overview
 
-Runic Proxies are the mechanical workforce of the Nine Realms. They are 16-bit golem agents that automate harvesting while the player is offline. Their efficiency is determined by the Alignment Bezel configuration, and their behavior directly impacts realm stability.
+Runic Proxies are the mechanical workforce of the Nine Realms. They are 16-bit golem agents that automate harvesting or maintenance while the player is offline. 
+
+> **Design Philosophy: The Sprinkler Model**
+> Much like the sprinkler systems in *Stardew Valley*, Proxies exist to automate "chores" so Odin can focus on high-level restoration and narrative. The **Alignment Bezel** determines the "Tier" of the Proxy: a **Divine Sync** Proxy acts like an "Iridium Sprinkler," covering a massive area, while a **Clumsy** Proxy only affects its immediate surroundings.
 
 ---
 
 ## 2. Proxy Lifecycle
 
 ```
-Crafted at Proxy Bench → Programmed via Bezel → Deployed to Realm → Operates Offline → Picked Up / Re-Deployed
+Crafted at Proxy Bench (Requires **Runic Seed**) → Programmed via Bezel → Deployed to Realm → **Choose Directive (Mend vs. Harvest)** → Operates Offline → Picked Up / Re-Deployed
+
+### 2.1 The Directive System
+Upon deployment, Odin can set the Proxy's **Primary Directive**. This choice determines the Proxy's behavior during both online and offline simulation.
+
+*   **Mend Mode (Restoration Focus):** The Proxy ignores resource nodes and focuses exclusively on clearing Chaos overlays (Ice/Vines). **Divine Sync** alignment increases the clearing radius and speed.
+*   **Harvest Mode (Economy Focus):** The Proxy focuses on gathering Star-Iron or Mana-Sap. **Divine Sync** alignment increases the yield per harvest cycle.
+*   **Safety Guarantee:** In the MVP, neither mode is "destructive." A poorly aligned Proxy is simply less effective at its assigned task.
 ```
 
-### States
+### 2.1 States
 | State | Efficiency | Chaos Impact | Visual |
 |:------|:-----------|:-------------|:-------|
 | **Divine Sync** | 100% | Slows Chaos | Normal sprite, iridescent glow |
@@ -27,6 +37,15 @@ Crafted at Proxy Bench → Programmed via Bezel → Deployed to Realm → Operat
 | **Distracted** | 40% | None | Paces aimlessly |
 | **Clumsy** | 10% | None | Red tint, "tripping" animation |
 | **Stony Idle** | 0% | None | Grey, motionless |
+| **Halted** | 0% | None | **REMOVED.** Returned to Asgard Vault. |
+
+> **Note on Efficiency:** In the MVP, poorly aligned Proxies (Clumsy state) are **Non-Destructive**. They do not damage the environment or increase chaos; they simply operate at drastically reduced speed and yield.
+
+### 2.1 Failure State & Evacuation
+When a realm reaches **100% Chaos (Ruined)**, all deployed Proxies in that realm are subject to a **Mandatory Evacuation**:
+*   **Serialized Retreat:** Proxies are removed from the active scene and serialized back into the player's "Vault" inventory.
+*   **Halt Orders:** Any active harvesting or maintenance tasks are terminated.
+*   **Redeployment Block:** Proxies cannot be sent back to the realm until Odin manually purifies it below the Stability Threshold (50%).
 
 ---
 

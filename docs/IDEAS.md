@@ -118,7 +118,21 @@
 
 ---
 
-## 🛠️ Technical Polish
+## 🕊️ Diplomacy & Global Events (Future Expansion)
+
+### 1. The Grand Trade Moot
+*   **Concept**: Every 7 "cycles," the realms gather to discuss trade and territory.
+*   **Timing Model (The All-Sleep)**: Triggered by **Offline Duration Thresholds**. 
+    *   *Example*: For every 24 hours you are away, one "Moot Cycle" processes. You wake up to a "Raven Report" of diplomatic changes that happened while you slept.
+*   **Gameplay**: Odin must decide which realm's crisis to prioritize. Helping Nidavellir might cause Alfheim's opinion of Asgard to drop.
+
+### 2. Crisis Mitigation
+*   **Concept**: Events that temporarily change realm dynamics.
+*   **Examples**:
+    *   **Frost-Snap**: Nidavellir production slows; requires Odin to deploy Heat-Proxies.
+    *   **Spirit Drift**: Alfheim citizens become distracted; requires Odin to perform a "Siren Song" ritual.
+
+---
 
 ### 8. The "Mechanical Feel" (Haptics)
 *   **Concept**: The Bezel shouldn't just be a UI; it should feel like a physical machine.
@@ -129,7 +143,14 @@
 
 ---
 
-## AI Changelog
+## 🌪️ Chaos & Hard Mode Ideas (Post-MVP)
+
+### 1. Destructive Proxy Failures
+*   **Concept**: Instead of just being "inefficient," a poorly aligned Proxy (Clumsy state) could physically damage the environment or create "Micro-Chaos."
+*   **Gameplay**: Tripping over machinery, smashing nodes, or "leaking" chaos energy that Odin must manually clean up.
+*   **Reason for Deferral**: Too high anxiety for a "Cozy" start. Keep for a potential "Ragnarok Mode."
+
+---
 
 | Date | Change | Reasoning |
 |:-----|:-------|:----------|

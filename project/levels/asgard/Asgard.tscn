@@ -24,6 +24,7 @@ grow_vertical = 2
 color = Color(0.180392, 0.133333, 0.184314, 1)
 
 [node name="World" type="Node2D" parent="."]
+y_sort_enabled = true
  
  [node name="FloorPattern" type="TextureRect" parent="World"]
  texture_filter = 1
