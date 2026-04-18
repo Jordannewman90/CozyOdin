@@ -2,6 +2,33 @@
 
 > **This is a sandbox.** A place to capture "What if?" moments, high-level features, and polish ideas that aren't yet part of the Master PRD but worth revisiting.
 
+## 🏷️ Final Branding
+
+**Title**: **The All-Sleep**
+**Tagline**: **The Realms Drift while you dream**
+
+*   **Logic**: Highlights the **Alignment Bezel** mechanic (drifting out of sync) and the **Offline Simulation** (while you dream). It perfectly balances Norse grandeur with cozy management.
+
+---
+
+## 🏷️ Project Codenames (The "Snap" Rankings)
+
+**Tier 1: High Marketing "Snap" (Catchy & Universal)**
+1.  **The All-Sleep**: The gold standard. Mysterious and grand.
+2.  **Asgard After Hours**: (NEW) Classic "After Hours" vibe. Implies a living world while the boss is away.
+3.  **Odin’s Off-Day**: (NEW) Relatable, funny, and has great alliteration.
+4.  **Divine Doze**: Punchy, short, and memorable.
+
+**Tier 2: Narrative & Thematic (Lore-Heavy)**
+- **The Long Nap of Odin**: Epic but quirky.
+- **The Snooze of the Aesir**: Regal and high-status.
+- **Mimir’s Midnight**: Mysterious and intellectual.
+
+**Tier 3: Cozy & Playful (Zen Audience)**
+- **Bifrost Bedtime**: Gentle and implies a "bedtime story" loop.
+- **Valhalla Vacation**: Humorous and laid back.
+- **Spear & Slumber**: Direct and rhythmic.
+
 ---
 
 ## 🏗️ Refined Alignment Mechanics (The "Cozy Scaling" Suite)
