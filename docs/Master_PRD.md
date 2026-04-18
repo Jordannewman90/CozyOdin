@@ -27,7 +27,24 @@ Project All-Sleep is an offline-first, cozy management game where the player act
 
 ---
 
-## 3. The Odin Experience: Power & Presence
+## 3. Living World: The Population Scaler
+
+To provide visual feedback for realm restoration, the number of active NPCs scales dynamically with the local Chaos Level.
+
+### A. Population Density
+| Chaos % | NPC Count | Behavior |
+|:--------|:----------|:---------|
+| **0 - 10%** | 5 - 8 | Thriving. Citizens are dancing, sitting, or chatting. |
+| **11 - 40%**| 2 - 3 | Functional. Citizens are walking between workstations. |
+| **41 - 70%**| 1 | Survival. A lone scout or worried citizen near the portal. |
+| **71 - 100%**| 0 | Abandoned. The realm is too dangerous for civilians. |
+
+### B. The Bark System
+Citizens do not have dialogue trees. They use overhead "Bark Bubbles" that trigger as Odin passes by, offering gratitude or commentary on the realm's health.
+
+---
+
+## 4. The Odin Experience: Power & Presence
 
 Odin’s divine power isn’t a cheat code; it is a high-end, colorful "polish" applied to a chaotic world, governed by Stamina (Tension).
 

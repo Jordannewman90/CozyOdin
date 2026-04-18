@@ -61,6 +61,9 @@
 | `dagr_idle.png` | Sheet | 4 | 🔴 | Elven caretaker |
 | `brokk_idle.png` | Sheet | 4 | 🔴 | Stocky dwarf smith |
 | `eitri_idle.png` | Sheet | 4 | 🔴 | Precision dwarf smith |
+| `citizen_dwarf.png` | Sheet | 4 | 🔴 | Generic Nidavellir civilian |
+| `citizen_elf.png` | Sheet | 4 | 🔴 | Generic Alfheim civilian |
+| `citizen_asgard.png`| Sheet | 4 | 🔴 | Palace servant/einherjar |
 
 ---
 
